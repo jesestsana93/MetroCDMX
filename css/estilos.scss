@@ -1,0 +1,38 @@
+//--------------------------------------
+// 			PATRON DE COLORES
+//--------------------------------------
+$principal: #FF7F00;
+$secundario:#11BB00;
+$texto:#44484a;
+
+/*------------------------------
+1. TIPOGRAFIA DEL SITIO
+--------------------------------*/
+html {
+    font-size: 13px;
+}
+
+body {
+    color: $texto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* =============================================
+X. Show de las Medias Queries
+============================================= */
+/* --------------Vista Md ------------- */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* --------------Vista Lg ------------- */
+@media (min-width: 992px) {}
+
+/* --------------Vista Xl ------------- */
+@media (min-width: 1200px) {
+    html {
+        font-size: 17px;
+    }
+}
