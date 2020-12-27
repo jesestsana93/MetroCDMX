@@ -1,20 +1,96 @@
 //--------------------------------------
 // 			PATRON DE COLORES
 //--------------------------------------
-$principal: #FF7F00;
+$principal:#f79239;
 $secundario:#11BB00;
 $texto:#44484a;
+$claro: white;
 
 /*------------------------------
 1. TIPOGRAFIA DEL SITIO
 --------------------------------*/
 html {
-    font-size: 13px;
+    font-size: 14px;
+    font-family: 'Helvetica';
 }
 
 body {
     color: $texto;
-    font-family: 'Open Sans', sans-serif;
+    
+}
+
+/*------------------------------
+2. ESTILOS GENERALES
+--------------------------------*/
+.bg-primary{
+    background-color: $principal !important;
+}
+
+/*------------------------------
+3. INICIO
+--------------------------------*/
+#inicio{
+    .logo img{
+        width: 20rem;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: $claro;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+     /*Boton del menu */
+     .boton-menu:before {
+        content: "\f0c9";
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        color: $claro;
+        font-size: 2.5rem;
+
+        &:focus,
+        &:active {
+            outline: none;
+        }
+
+    }
+
+    .icono-cerrar:before {
+        content: "\f00d";
+        position: relative;
+        left: .2rem;
+        font-size: 2.5rem;
+    }
+
+    .navbar-nav .nav-item{
+        .dropdown-menu{
+            background-color: $principal;
+    
+            .dropdown-item{
+                color: $claro;
+
+                &:focus,
+                &:hover{
+                    color: $principal;
+                }
+                &:active{
+                    background-color: $claro;
+                }
+            }
+        }
+    }
+    
+
+    
+
+}
+
+
+/*------------------------------
+Y. FOOTER
+--------------------------------*/
+#footer{
+
 }
 
 /* =============================================
@@ -25,14 +101,36 @@ X. Show de las Medias Queries
     html {
         font-size: 16px;
     }
+
+    #inicio{
+       .navbar-nav .nav-item .dropdown-menu {
+            margin-left: -7rem;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            font-size: 1rem;
+        }
+    }
 }
 
 /* --------------Vista Lg ------------- */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    #inicio{
+        .logo img{
+            width: 16rem;
+        }
+    }
+}
 
 /* --------------Vista Xl ------------- */
 @media (min-width: 1200px) {
     html {
         font-size: 17px;
     }
+    #inicio{
+        .logo img{
+            width: 14rem;
+        }
+    }
+    
 }

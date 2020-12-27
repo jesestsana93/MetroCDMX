@@ -1,24 +1,116 @@
 /*------------------------------
 1. TIPOGRAFIA DEL SITIO
 --------------------------------*/
+/* line 12, estilos.scss */
 html {
-  font-size: 13px; }
+  font-size: 14px;
+  font-family: 'Helvetica';
+}
 
+/* line 17, estilos.scss */
 body {
   color: #44484a;
-  font-family: 'Open Sans', sans-serif; }
+}
 
+/*------------------------------
+2. ESTILOS GENERALES
+--------------------------------*/
+/* line 25, estilos.scss */
+.bg-primary {
+  background-color: #f79239 !important;
+}
+
+/*------------------------------
+3. INICIO
+--------------------------------*/
+/* line 32, estilos.scss */
+#inicio {
+  /*Boton del menu */
+}
+/* line 33, estilos.scss */
+#inicio .logo img {
+  width: 20rem;
+}
+/* line 37, estilos.scss */
+#inicio .navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+/* line 44, estilos.scss */
+#inicio .boton-menu:before {
+  content: "\f0c9";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: white;
+  font-size: 2.5rem;
+}
+/* line 51, estilos.scss */
+#inicio .boton-menu:before:focus, #inicio .boton-menu:before:active {
+  outline: none;
+}
+/* line 58, estilos.scss */
+#inicio .icono-cerrar:before {
+  content: "\f00d";
+  position: relative;
+  left: .2rem;
+  font-size: 2.5rem;
+}
+/* line 66, estilos.scss */
+#inicio .navbar-nav .nav-item .dropdown-menu {
+  background-color: #f79239;
+}
+/* line 69, estilos.scss */
+#inicio .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  color: white;
+}
+/* line 72, estilos.scss */
+#inicio .navbar-nav .nav-item .dropdown-menu .dropdown-item:focus, #inicio .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  color: #f79239;
+}
+/* line 76, estilos.scss */
+#inicio .navbar-nav .nav-item .dropdown-menu .dropdown-item:active {
+  background-color: white;
+}
+
+/*------------------------------
+Y. FOOTER
+--------------------------------*/
 /* =============================================
 X. Show de las Medias Queries
 ============================================= */
 /* --------------Vista Md ------------- */
 @media (min-width: 768px) {
+  /* line 101, estilos.scss */
   html {
-    font-size: 16px; } }
+    font-size: 16px;
+  }
+
+  /* line 106, estilos.scss */
+  #inicio .navbar-nav .nav-item .dropdown-menu {
+    margin-left: -7rem;
+  }
+  /* line 110, estilos.scss */
+  #inicio .navbar-dark .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+}
 /* --------------Vista Lg ------------- */
+@media (min-width: 992px) {
+  /* line 119, estilos.scss */
+  #inicio .logo img {
+    width: 16rem;
+  }
+}
 /* --------------Vista Xl ------------- */
 @media (min-width: 1200px) {
+  /* line 127, estilos.scss */
   html {
-    font-size: 17px; } }
+    font-size: 17px;
+  }
 
-/*# sourceMappingURL=estilos.css.map */
+  /* line 131, estilos.scss */
+  #inicio .logo img {
+    width: 14rem;
+  }
+}
