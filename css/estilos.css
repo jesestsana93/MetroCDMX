@@ -1,13 +1,11 @@
 /*------------------------------
 1. TIPOGRAFIA DEL SITIO
 --------------------------------*/
-/* line 12, estilos.scss */
 html {
   font-size: 14px;
   font-family: 'Helvetica';
 }
 
-/* line 17, estilos.scss */
 body {
   color: #44484a;
 }
@@ -15,29 +13,78 @@ body {
 /*------------------------------
 2. ESTILOS GENERALES
 --------------------------------*/
-/* line 25, estilos.scss */
 .bg-primary {
   background-color: #f79239 !important;
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #11BB00;
+}
+
+.linea1 {
+  background-color: #F56394;
+}
+
+.linea2 {
+  background-color: #0265A9;
+}
+
+.linea3 {
+  background-color: #AE9D27;
+}
+
+.linea4 {
+  background-color: #6FB6AE;
+}
+
+.linea5 {
+  background-color: #FDE104;
+}
+
+.linea6 {
+  background-color: #FF1001;
+}
+
+.linea7 {
+  background-color: #FF6308;
+}
+
+.linea8 {
+  background-color: #018748;
+}
+
+.linea9 {
+  background-color: #5D2B2A;
+}
+
+.lineaA {
+  background-color: #A3277D;
+}
+
+.lineaB {
+  background-color: #A8A8A8;
+}
+
+.linea12 {
+  background-color: #B99E51;
 }
 
 /*------------------------------
 3. INICIO
 --------------------------------*/
-/* line 32, estilos.scss */
 #inicio {
   /*Boton del menu */
 }
-/* line 33, estilos.scss */
 #inicio .logo img {
   width: 20rem;
 }
-/* line 37, estilos.scss */
 #inicio .navbar-dark .navbar-nav .nav-link {
   color: white;
   font-size: 1.5rem;
   text-align: center;
 }
-/* line 44, estilos.scss */
 #inicio .boton-menu:before {
   content: "\f0c9";
   font-family: 'Font Awesome 5 Free';
@@ -45,30 +92,24 @@ body {
   color: white;
   font-size: 2.5rem;
 }
-/* line 51, estilos.scss */
 #inicio .boton-menu:before:focus, #inicio .boton-menu:before:active {
   outline: none;
 }
-/* line 58, estilos.scss */
 #inicio .icono-cerrar:before {
   content: "\f00d";
   position: relative;
   left: .2rem;
   font-size: 2.5rem;
 }
-/* line 66, estilos.scss */
 #inicio .navbar-nav .nav-item .dropdown-menu {
   background-color: #f79239;
 }
-/* line 69, estilos.scss */
 #inicio .navbar-nav .nav-item .dropdown-menu .dropdown-item {
   color: white;
 }
-/* line 72, estilos.scss */
 #inicio .navbar-nav .nav-item .dropdown-menu .dropdown-item:focus, #inicio .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
   color: #f79239;
 }
-/* line 76, estilos.scss */
 #inicio .navbar-nav .nav-item .dropdown-menu .dropdown-item:active {
   background-color: white;
 }
@@ -76,40 +117,77 @@ body {
 /*------------------------------
 Y. FOOTER
 --------------------------------*/
+#footer {
+  background-color: #44484a;
+}
+#footer h3, #footer li, #footer h5 {
+  color: white;
+}
+#footer h3 {
+  margin-left: 2.5rem;
+  margin-bottom: 1rem;
+}
+#footer ul li {
+  list-style: none;
+}
+#footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+#footer ul li a:hover {
+  color: #f79239;
+}
+
+/* =============================================
+. PAGINAS INTERNAS
+============================================= */
+/*Parque vehicular*/
+#parque-vehicular img {
+  margin-bottom: 1rem;
+}
+#parque-vehicular th, #parque-vehicular td {
+  border: 1px solid #f79239;
+}
+#parque-vehicular blockquote {
+  font-size: .8rem;
+}
+
+/*Cronologia*/
+#cronologia {
+  margin-top: 5rem;
+}
+#cronologia th, #cronologia td {
+  border: 1px solid #f79239;
+}
+
 /* =============================================
 X. Show de las Medias Queries
 ============================================= */
 /* --------------Vista Md ------------- */
 @media (min-width: 768px) {
-  /* line 101, estilos.scss */
   html {
     font-size: 16px;
   }
 
-  /* line 106, estilos.scss */
   #inicio .navbar-nav .nav-item .dropdown-menu {
     margin-left: -7rem;
   }
-  /* line 110, estilos.scss */
   #inicio .navbar-dark .navbar-nav .nav-link {
     font-size: 1rem;
   }
 }
 /* --------------Vista Lg ------------- */
 @media (min-width: 992px) {
-  /* line 119, estilos.scss */
   #inicio .logo img {
     width: 16rem;
   }
 }
 /* --------------Vista Xl ------------- */
 @media (min-width: 1200px) {
-  /* line 127, estilos.scss */
   html {
     font-size: 17px;
   }
 
-  /* line 131, estilos.scss */
   #inicio .logo img {
     width: 14rem;
   }

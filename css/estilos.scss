@@ -6,6 +6,19 @@ $secundario:#11BB00;
 $texto:#44484a;
 $claro: white;
 
+$linea1: #F56394;
+$linea2: #0265A9;
+$linea3: #AE9D27;
+$linea4: #6FB6AE;
+$linea5: #FDE104;
+$linea6: #FF1001;
+$linea7: #FF6308;
+$linea8: #018748;
+$linea9: #5D2B2A;
+$lineaA: #A3277D;
+$lineaB: #A8A8A8;
+$linea12: #B99E51;
+
 /*------------------------------
 1. TIPOGRAFIA DEL SITIO
 --------------------------------*/
@@ -25,6 +38,48 @@ body {
 .bg-primary{
     background-color: $principal !important;
 }
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    color: $secundario;
+}
+.linea1{
+    background-color: $linea1;
+}
+.linea2{
+    background-color: $linea2;
+}
+.linea3{
+    background-color: $linea3;
+}
+.linea4{
+    background-color: $linea4;
+}
+.linea5{
+    background-color: $linea5;
+}
+.linea6{
+    background-color: $linea6;
+}
+.linea7{
+    background-color: $linea7;
+}
+.linea8{
+    background-color: $linea8;
+}
+.linea9{
+    background-color: $linea9;
+}
+.lineaA{
+    background-color: $lineaA;
+}
+.lineaB{
+    background-color: $lineaB;
+}
+.linea12{
+    background-color: $linea12;
+}
+
 
 /*------------------------------
 3. INICIO
@@ -78,18 +133,59 @@ body {
                 }
             }
         }
-    }
-    
-
-    
+    } 
 
 }
-
 
 /*------------------------------
 Y. FOOTER
 --------------------------------*/
 #footer{
+    background-color: $texto;
+
+    h3, li, h5{
+        color: $claro;
+    }
+    h3{
+        margin-left: 2.5rem;
+        margin-bottom: 1rem;
+    }    
+
+    ul li{
+        list-style: none;
+        a{
+            color: $claro;
+            text-decoration: none;
+
+            &:hover{
+                color: $principal;
+            }
+        }
+    }
+}
+
+/* =============================================
+. PAGINAS INTERNAS
+============================================= */
+/*Parque vehicular*/
+#parque-vehicular{
+    img{
+        margin-bottom: 1rem;
+    }
+    th, td{
+        border:1px solid $principal;
+    }
+    blockquote{
+        font-size: .8rem;
+    }
+}
+/*Cronologia*/
+#cronologia{
+    margin-top: 5rem;
+
+    th, td{
+        border:1px solid $principal;
+    }
 
 }
 
