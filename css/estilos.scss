@@ -169,9 +169,50 @@ Y. FOOTER
 ============================================= */
 /*Parque vehicular*/
 #parque-vehicular{
-    img{
-        margin-bottom: 1rem;
+    .info p{
+        line-height: 0;
     }
+    .metro{
+        position: relative;
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+
+        .info{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 1rem;
+            left: 0;
+            overflow: hidden;
+            background-color: $principal;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all .4s ease;
+            z-index: 10;
+            padding: .5rem;
+
+            &:hover {
+                opacity: .9;
+            }
+
+            p {
+                position: relative;
+                transition: all .3s ease;
+                /*Correción para IE11+*/
+                width: 100%;
+                color: $claro;
+            }
+        }    
+        img{
+            margin-bottom: 1rem;            
+            transition: all .3s ease;            
+        }    
+    }
+    
     th, td{
         border:1px solid $principal;
     }
@@ -179,6 +220,7 @@ Y. FOOTER
         font-size: .8rem;
     }
 }
+
 /*Cronologia*/
 #cronologia{
     margin-top: 5rem;

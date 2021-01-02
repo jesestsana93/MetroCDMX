@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------
 1. TIPOGRAFIA DEL SITIO
 --------------------------------*/
@@ -142,8 +143,57 @@ Y. FOOTER
 . PAGINAS INTERNAS
 ============================================= */
 /*Parque vehicular*/
-#parque-vehicular img {
+#parque-vehicular .info p {
+  line-height: 0;
+}
+#parque-vehicular .metro {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+#parque-vehicular .metro .info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 1rem;
+  left: 0;
+  overflow: hidden;
+  background-color: #f79239;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  z-index: 10;
+  padding: .5rem;
+}
+#parque-vehicular .metro .info:hover {
+  opacity: .9;
+}
+#parque-vehicular .metro .info p {
+  position: relative;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  /*Correción para IE11+*/
+  width: 100%;
+  color: white;
+}
+#parque-vehicular .metro img {
   margin-bottom: 1rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 #parque-vehicular th, #parque-vehicular td {
   border: 1px solid #f79239;
