@@ -121,7 +121,9 @@ Y. FOOTER
 #footer {
   background-color: #44484a;
 }
-#footer h3, #footer li, #footer h5 {
+#footer h3,
+#footer li,
+#footer h5 {
   color: white;
 }
 #footer h3 {
@@ -142,6 +144,34 @@ Y. FOOTER
 /* =============================================
 . PAGINAS INTERNAS
 ============================================= */
+/*------------------------------
+Y. LA-RED
+--------------------------------*/
+.la-red a {
+  text-decoration: none;
+  color: #44484a;
+}
+.la-red span {
+  color: white;
+  border-radius: 1rem;
+  padding: .2rem;
+}
+.la-red h6 {
+  color: #11BB00;
+  text-transform: uppercase;
+}
+.la-red p {
+  margin-bottom: .2rem;
+}
+.la-red .logo-estacion {
+  width: 7rem;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+/*------------------------------
+Y. OPERACION
+--------------------------------*/
 /*Parque vehicular*/
 #parque-vehicular .info p {
   line-height: 0;
@@ -195,7 +225,8 @@ Y. FOOTER
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
-#parque-vehicular th, #parque-vehicular td {
+#parque-vehicular th,
+#parque-vehicular td {
   border: 1px solid #f79239;
 }
 #parque-vehicular blockquote {
@@ -206,7 +237,8 @@ Y. FOOTER
 #cronologia {
   margin-top: 5rem;
 }
-#cronologia th, #cronologia td {
+#cronologia th,
+#cronologia td {
   border: 1px solid #f79239;
 }
 

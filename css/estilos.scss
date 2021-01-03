@@ -29,54 +29,67 @@ html {
 
 body {
     color: $texto;
-    
+
 }
 
 /*------------------------------
 2. ESTILOS GENERALES
 --------------------------------*/
-.bg-primary{
+.bg-primary {
     background-color: $principal !important;
 }
-h3{
+
+h3 {
     text-align: center;
     text-transform: uppercase;
     color: $secundario;
 }
-.linea1{
+
+.linea1 {
     background-color: $linea1;
 }
-.linea2{
+
+.linea2 {
     background-color: $linea2;
 }
-.linea3{
+
+.linea3 {
     background-color: $linea3;
 }
-.linea4{
+
+.linea4 {
     background-color: $linea4;
 }
-.linea5{
+
+.linea5 {
     background-color: $linea5;
 }
-.linea6{
+
+.linea6 {
     background-color: $linea6;
 }
-.linea7{
+
+.linea7 {
     background-color: $linea7;
 }
-.linea8{
+
+.linea8 {
     background-color: $linea8;
 }
-.linea9{
+
+.linea9 {
     background-color: $linea9;
 }
-.lineaA{
+
+.lineaA {
     background-color: $lineaA;
 }
-.lineaB{
+
+.lineaB {
     background-color: $lineaB;
 }
-.linea12{
+
+.linea12 {
     background-color: $linea12;
 }
 
@@ -84,8 +97,8 @@ h3{
 /*------------------------------
 3. INICIO
 --------------------------------*/
-#inicio{
-    .logo img{
+#inicio {
+    .logo img {
         width: 20rem;
     }
 
@@ -95,8 +108,8 @@ h3{
         text-align: center;
     }
 
-     /*Boton del menu */
-     .boton-menu:before {
+    /*Boton del menu */
+    .boton-menu:before {
         content: "\f0c9";
         font-family: 'Font Awesome 5 Free';
         font-weight: 900;
@@ -117,47 +130,52 @@ h3{
         font-size: 2.5rem;
     }
 
-    .navbar-nav .nav-item{
-        .dropdown-menu{
+    .navbar-nav .nav-item {
+        .dropdown-menu {
             background-color: $principal;
-    
-            .dropdown-item{
+
+            .dropdown-item {
                 color: $claro;
 
                 &:focus,
-                &:hover{
+                &:hover {
                     color: $principal;
                 }
-                &:active{
+
+                &:active {
                     background-color: $claro;
                 }
             }
         }
-    } 
+    }
 
 }
 
 /*------------------------------
 Y. FOOTER
 --------------------------------*/
-#footer{
+#footer {
     background-color: $texto;
 
-    h3, li, h5{
+    h3,
+    li,
+    h5 {
         color: $claro;
     }
-    h3{
+
+    h3 {
         margin-left: 2.5rem;
         margin-bottom: 1rem;
-    }    
+    }
 
-    ul li{
+    ul li {
         list-style: none;
-        a{
+
+        a {
             color: $claro;
             text-decoration: none;
 
-            &:hover{
+            &:hover {
                 color: $principal;
             }
         }
@@ -167,18 +185,52 @@ Y. FOOTER
 /* =============================================
 . PAGINAS INTERNAS
 ============================================= */
+/*------------------------------
+Y. LA-RED
+--------------------------------*/
+.la-red {
+    a {
+        text-decoration: none;
+        color: $texto;
+    }
+
+    span {
+        color: white;
+        border-radius: 1rem;
+        padding: .2rem;
+    }
+    h6{
+        color: $secundario;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin-bottom: .2rem;
+    }
+
+    .logo-estacion {
+        width: 7rem;
+        margin-top: 1.5rem;
+        margin-bottom: .5rem;
+    }
+}
+
+/*------------------------------
+Y. OPERACION
+--------------------------------*/
 /*Parque vehicular*/
-#parque-vehicular{
-    .info p{
+#parque-vehicular {
+    .info p {
         line-height: 0;
     }
-    .metro{
+
+    .metro {
         position: relative;
         display: block;
         overflow: hidden;
         cursor: pointer;
 
-        .info{
+        .info {
             position: absolute;
             top: 0;
             right: 0;
@@ -206,27 +258,31 @@ Y. FOOTER
                 width: 100%;
                 color: $claro;
             }
-        }    
-        img{
-            margin-bottom: 1rem;            
-            transition: all .3s ease;            
-        }    
+        }
+
+        img {
+            margin-bottom: 1rem;
+            transition: all .3s ease;
+        }
     }
-    
-    th, td{
-        border:1px solid $principal;
+
+    th,
+    td {
+        border: 1px solid $principal;
     }
-    blockquote{
+
+    blockquote {
         font-size: .8rem;
     }
 }
 
 /*Cronologia*/
-#cronologia{
+#cronologia {
     margin-top: 5rem;
 
-    th, td{
-        border:1px solid $principal;
+    th,
+    td {
+        border: 1px solid $principal;
     }
 
 }
@@ -240,8 +296,8 @@ X. Show de las Medias Queries
         font-size: 16px;
     }
 
-    #inicio{
-       .navbar-nav .nav-item .dropdown-menu {
+    #inicio {
+        .navbar-nav .nav-item .dropdown-menu {
             margin-left: -7rem;
         }
 
@@ -253,8 +309,8 @@ X. Show de las Medias Queries
 
 /* --------------Vista Lg ------------- */
 @media (min-width: 992px) {
-    #inicio{
-        .logo img{
+    #inicio {
+        .logo img {
             width: 16rem;
         }
     }
@@ -265,10 +321,11 @@ X. Show de las Medias Queries
     html {
         font-size: 17px;
     }
-    #inicio{
-        .logo img{
+
+    #inicio {
+        .logo img {
             width: 14rem;
         }
     }
-    
+
 }
