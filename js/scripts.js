@@ -20,6 +20,7 @@ $(function () {
     var pathImg = '';
     var path = '';
     header();
+    menulineas();
     footer();
 
     /*-------------------------------------------------------------------
@@ -37,8 +38,8 @@ $(function () {
         <nav id="menu-navegacion" class="navbar navbar-dark bg-primary navbar-expand-md">
         <div class="container">
             <!--LOGOTIPO DEL SITIO-->
-            <a href="`+path+`index.html" class="navbar-brand logo">
-                <img src="`+pathImg+`/logo_metro.png" alt="Logo STC Metro" class="img-fluid">
+            <a href="` + path + `index.html" class="navbar-brand logo">
+                <img src="` + pathImg + `/logo_metro.png" alt="Logo STC Metro" class="img-fluid">
             </a>
             <!--BOTON DEL MENU RESPONSIVE-->
             <button type="button" class="navbar-toggler d-md-none" data-toggle="collapse"
@@ -49,7 +50,7 @@ $(function () {
             <!--BARRA DE NAVEGACION-->
             <div class="collapse navbar-collapse" id="menu-principal">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="`+path+`index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="` + path + `index.html" class="nav-link">Inicio</a></li>
                     <li class="nav-item"><a href="" class="nav-link">Nosotros</a></li>
                     <li class="nav-item dropdown">
                         <a href="" class="nav-link dropdown-toggle" id="redMetro" role="button"
@@ -57,18 +58,18 @@ $(function () {
                         </a>
                         <div class="dropdown-menu" aria-labelledby="redMetro">
                             <a href="#" class="dropdown-item">Mapa de la red</a>
-                            <a href="`+path+`lineas/linea-1.html" class="dropdown-item">Línea 1</a>
-                            <a href="`+path+`la-red/linea-2.html" class="dropdown-item">Línea 2</a>
-                            <a href="`+path+`la-red/linea-3.html" class="dropdown-item">Línea 3</a>
-                            <a href="`+path+`la-red/linea-4.html" class="dropdown-item">Línea 4</a>
-                            <a href="`+path+`la-red/linea-5.html" class="dropdown-item">Línea 5</a>
-                            <a href="`+path+`la-red/linea-6.html" class="dropdown-item">Línea 6</a>
-                            <a href="`+path+`la-red/linea-7.html" class="dropdown-item">Línea 7</a>
-                            <a href="`+path+`la-red/linea-8.html" class="dropdown-item">Línea 8</a>
-                            <a href="`+path+`la-red/linea-9.html" class="dropdown-item">Línea 9</a>
-                            <a href="`+path+`la-red/linea-A.html" class="dropdown-item">Línea A</a>
-                            <a href="`+path+`la-red/linea-B.html" class="dropdown-item">Línea B</a>
-                            <a href="`+path+`la-red/linea-12.html" class="dropdown-item">Línea 12</a>
+                            <a href="` + path + `la-red/linea-1.html" class="dropdown-item">Línea 1</a>
+                            <a href="` + path + `la-red/linea-2.html" class="dropdown-item">Línea 2</a>
+                            <a href="` + path + `la-red/linea-3.html" class="dropdown-item">Línea 3</a>
+                            <a href="` + path + `la-red/linea-4.html" class="dropdown-item">Línea 4</a>
+                            <a href="` + path + `la-red/linea-5.html" class="dropdown-item">Línea 5</a>
+                            <a href="` + path + `la-red/linea-6.html" class="dropdown-item">Línea 6</a>
+                            <a href="` + path + `la-red/linea-7.html" class="dropdown-item">Línea 7</a>
+                            <a href="` + path + `la-red/linea-8.html" class="dropdown-item">Línea 8</a>
+                            <a href="` + path + `la-red/linea-9.html" class="dropdown-item">Línea 9</a>
+                            <a href="` + path + `la-red/linea-A.html" class="dropdown-item">Línea A</a>
+                            <a href="` + path + `la-red/linea-B.html" class="dropdown-item">Línea B</a>
+                            <a href="` + path + `la-red/linea-12.html" class="dropdown-item">Línea 12</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -83,10 +84,10 @@ $(function () {
                         <a href="" class="nav-link dropdown-toggle" id="operacion" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Operación</a>
                         <div class="dropdown-menu" aria-labelledby="operacion">
-                            <a href="`+path+`operacion/parque-vehicular.html" class="dropdown-item">Parque vehicular</a>
-                            <a href="`+path+`operacion/carro-neumatico-y-ferreo.html" class="dropdown-item">Carro neumático y férreo</a>
-                            <a href="`+path+`operacion/conformacion-de-un-tren.html" class="dropdown-item">Conformación de un tren</a>
-                            <a href="`+path+`operacion/cronologia.html" class="dropdown-item">Cronología del metro</a>
+                            <a href="` + path + `operacion/parque-vehicular.html" class="dropdown-item">Parque vehicular</a>
+                            <a href="` + path + `operacion/carro-neumatico-y-ferreo.html" class="dropdown-item">Carro neumático y férreo</a>
+                            <a href="` + path + `operacion/conformacion-de-un-tren.html" class="dropdown-item">Conformación de un tren</a>
+                            <a href="` + path + `operacion/cronologia.html" class="dropdown-item">Cronología del metro</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -107,6 +108,53 @@ $(function () {
         `);
     };
 
+    /*-------------------------------------------------------------------
+        X. SUBMENU ENTRE LAS LINEAS DEL METRO
+    --------------------------------------------------------------------*/
+    function menulineas() {
+        $('#menulineas').append(` 
+        <div class="container mt-5">
+            <div class="row mt-5 text-center">
+                <div class="col-3 col-sm-2 col-lg-1 linea1 mt-4 p-3 p-lg-1">
+                    <a href="linea-1.html">Línea 1</a>
+                </div>
+                <div class="col-3 col-sm-2 col-lg-1 linea2 mt-4 p-3 p-lg-1">
+                    <a href="linea-2.html">Línea 2</a>
+                </div>
+                <div class="col-3 col-sm-2 col-lg-1 linea3 mt-4 p-3 p-lg-1">
+                    <a href="linea-3.html">Línea 3</a>
+                </div>
+                <div class="col-3 col-sm-2 col-lg-1 linea4 mt-4 p-3 p-lg-1">
+                    <a href="linea-4.html">Línea 4</a>
+                </div>
+                <div class="col-3 col-sm-2 col-lg-1 linea5 mt-sm-4 p-3 p-lg-1">
+                    <a href="linea-5.html">Línea 5</a>
+                </div>
+                <div class="col-3 col-sm-2 col-lg-1 linea6 mt-sm-4 p-3 p-lg-1">
+                    <a href="linea-6.html">Línea 6</a>
+                </div>
+                <div class="col-3 col-sm-2 col-lg-1 linea7 mt-lg-4 p-3 p-lg-1">
+                    <a href="linea-7.html">Línea 7</a>
+                </div>
+                <div class="col-3 col-sm-2 col-lg-1 linea8 mt-lg-4 p-3 p-lg-1">
+                    <a href="linea-8.html">Línea 8</a>
+                </div>
+                <div class="col-3 col-sm-2 col-lg-1 linea9 mt-lg-4 p-3 p-lg-1">
+                    <a href="linea-9.html">Línea 9</a>
+                </div>
+                <div class="col-3 col-sm-2 col-lg-1 lineaA mt-lg-4 p-3 p-lg-1">
+                    <a href="linea-A.html">Línea A</a>
+                </div>
+                <div class="col-3 col-sm-2 col-lg-1 lineaB mt-lg-4 p-3 p-lg-1">
+                    <a href="linea-B.html">Línea B</a>
+                </div>
+                <div class="col-3 col-sm-2 col-lg-1 linea12 mt-lg-4  p-3 p-lg-1">
+                    <a href="linea-12.html">Línea 12</a>
+                </div>
+            </div>
+        </div>
+        `);
+    };
     /*-------------------------------------------------------------------
         X. FOOTER DEL SITIO
     --------------------------------------------------------------------*/
