@@ -18,6 +18,10 @@ body {
   background-color: #f79239 !important;
 }
 
+.btn-primary {
+  background-color: #f79239 !important;
+}
+
 h3 {
   text-align: center;
   text-transform: uppercase;
@@ -142,7 +146,7 @@ Y. FOOTER
 }
 
 /* =============================================
-. PAGINAS INTERNAS
+ PAGINAS INTERNAS
 ============================================= */
 #menulineas a {
   text-decoration: none;

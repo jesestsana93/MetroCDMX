@@ -28,7 +28,7 @@ $(function () {
     --------------------------------------------------------------------*/
     function header() {
         console.log(pageName)
-        if (pageName == 'line' || pageName == 'conf' || pageName == 'carr' || pageName == 'cron' || pageName == 'parq') {
+        if (pageName == 'line' || pageName == 'mapa' || pageName == 'muse' || pageName == 'conf' || pageName == 'carr' || pageName == 'cron' || pageName == 'parq') {
             pathImg = '../images';
             path = '../';
         } else {
@@ -57,7 +57,7 @@ $(function () {
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">La red
                         </a>
                         <div class="dropdown-menu" aria-labelledby="redMetro">
-                            <a href="#" class="dropdown-item">Mapa de la red</a>
+                            <a href="` + path + `la-red/mapa-de-la-red.html" class="dropdown-item">Mapa de la red</a>
                             <a href="` + path + `la-red/linea-1.html" class="dropdown-item">Línea 1</a>
                             <a href="` + path + `la-red/linea-2.html" class="dropdown-item">Línea 2</a>
                             <a href="` + path + `la-red/linea-3.html" class="dropdown-item">Línea 3</a>
@@ -76,7 +76,7 @@ $(function () {
                         <a href="" class="nav-link dropdown-toggle" id="cultura" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cultura</a>
                         <div class="dropdown-menu" aria-labelledby="cultura">
-                            <a href="" class="dropdown-item">Museo del metro</a>
+                            <a href="` + path + `cultura/museo-del-metro.html" class="dropdown-item">Museo del metro</a>
                             <a href="" class="dropdown-item">Galería fotográfica</a>
                         </div>
                     </li>
