@@ -31,7 +31,10 @@ $(function () {
         if (pageName == 'line' || pageName == 'mapa' || pageName == 'muse' || pageName == 'conf' || pageName == 'carr' || pageName == 'cron' || pageName == 'parq') {
             pathImg = '../images';
             path = '../';
-        } else {
+        } else if(pageName == 'esta'){
+            pathImg = '../../images';
+            path = '../../';
+        }else{
             pathImg = 'images';
         }
         $('header').append(`

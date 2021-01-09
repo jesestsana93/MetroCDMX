@@ -38,15 +38,30 @@ body {
 .bg-primary {
     background-color: $principal !important;
 }
-
+.btn:focus{
+    box-shadow: 0 0 0 0 transparent;
+}
 .btn-primary {
     background-color: $principal !important;
+    border-color: transparent;
+    
+    &:focus,
+    &.active,
+    &:hover{
+        background-color: $linea7 !important;
+        border-color: transparent;
+    }
+}
+.btn-primary:not(:disabled):not(.disabled):active{
+    background-color: $principal !important;
+    border-color: transparent;
 }
 
 h3 {
     text-align: center;
     text-transform: uppercase;
     color: $secundario;
+    margin-top: .5rem;
 }
 
 .linea1 {
@@ -160,6 +175,7 @@ Y. FOOTER
 --------------------------------*/
 #footer {
     background-color: $texto;
+    margin-top: 1rem;
 
     h3,
     li,
@@ -198,6 +214,28 @@ Y. FOOTER
 /*------------------------------
 Y. LA-RED
 --------------------------------*/
+.mapa-de-la-red{
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: $claro;
+        background-color: $principal;
+        border-color: $principal $principal $principal;
+    }
+    .nav-tabs{
+        border-bottom: 1px solid $principal;
+    }
+    .nav-tabs .nav-link {
+        border: 1px solid $principal;
+        margin-right: .3rem;
+    }
+    .nav-link:hover{
+        background-color: $principal;
+        color: $claro;
+    }
+    .nav-item a{
+        color: $principal;
+    }
+}
+
 .la-red {
     a {
         text-decoration: none;
@@ -222,6 +260,20 @@ Y. LA-RED
         width: 7rem;
         margin-top: 1.5rem;
         margin-bottom: .5rem;
+    }
+    .estacion{
+        display: flex;
+        justify-content: center;
+    }
+    .correspondencia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1.5rem;
+        margin-right: .25rem;
+    }
+    .paso{
+        border-bottom: 1px solid red;
     }
 }
 

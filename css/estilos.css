@@ -18,14 +18,30 @@ body {
   background-color: #f79239 !important;
 }
 
+.btn:focus {
+  -webkit-box-shadow: 0 0 0 0 transparent;
+          box-shadow: 0 0 0 0 transparent;
+}
+
 .btn-primary {
   background-color: #f79239 !important;
+  border-color: transparent;
+}
+.btn-primary:focus, .btn-primary.active, .btn-primary:hover {
+  background-color: #FF6308 !important;
+  border-color: transparent;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #f79239 !important;
+  border-color: transparent;
 }
 
 h3 {
   text-align: center;
   text-transform: uppercase;
   color: #11BB00;
+  margin-top: .5rem;
 }
 
 .linea1 {
@@ -124,6 +140,7 @@ Y. FOOTER
 --------------------------------*/
 #footer {
   background-color: #44484a;
+  margin-top: 1rem;
 }
 #footer h3,
 #footer li,
@@ -156,6 +173,26 @@ Y. FOOTER
 /*------------------------------
 Y. LA-RED
 --------------------------------*/
+.mapa-de-la-red .nav-tabs .nav-item.show .nav-link, .mapa-de-la-red .nav-tabs .nav-link.active {
+  color: white;
+  background-color: #f79239;
+  border-color: #f79239 #f79239 #f79239;
+}
+.mapa-de-la-red .nav-tabs {
+  border-bottom: 1px solid #f79239;
+}
+.mapa-de-la-red .nav-tabs .nav-link {
+  border: 1px solid #f79239;
+  margin-right: .3rem;
+}
+.mapa-de-la-red .nav-link:hover {
+  background-color: #f79239;
+  color: white;
+}
+.mapa-de-la-red .nav-item a {
+  color: #f79239;
+}
+
 .la-red a {
   text-decoration: none;
   color: #44484a;
@@ -176,6 +213,31 @@ Y. LA-RED
   width: 7rem;
   margin-top: 1.5rem;
   margin-bottom: .5rem;
+}
+.la-red .estacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.la-red .correspondencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5rem;
+  margin-right: .25rem;
+}
+.la-red .paso {
+  border-bottom: 1px solid red;
 }
 
 /*------------------------------
