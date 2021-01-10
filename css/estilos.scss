@@ -38,21 +38,25 @@ body {
 .bg-primary {
     background-color: $principal !important;
 }
-.btn:focus{
+
+.btn:focus {
     box-shadow: 0 0 0 0 transparent;
 }
+
 .btn-primary {
     background-color: $principal !important;
     border-color: transparent;
-    
+    transition: all .5s ease;
+
     &:focus,
     &.active,
-    &:hover{
+    &:hover {
         background-color: $linea7 !important;
         border-color: transparent;
     }
 }
-.btn-primary:not(:disabled):not(.disabled):active{
+
+.btn-primary:not(:disabled):not(.disabled):active {
     background-color: $principal !important;
     border-color: transparent;
 }
@@ -112,6 +116,12 @@ h3 {
     background-color: $linea12;
 }
 
+.descripcion {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: $principal;
+}
 
 /*------------------------------
 3. INICIO
@@ -205,33 +215,40 @@ Y. FOOTER
 /* =============================================
  PAGINAS INTERNAS
 ============================================= */
-#menulineas{
-    a{
+#menulineas {
+    a {
         text-decoration: none;
         color: $claro;
     }
 }
+
 /*------------------------------
 Y. LA-RED
 --------------------------------*/
-.mapa-de-la-red{
-    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+.mapa-de-la-red {
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
         color: $claro;
         background-color: $principal;
         border-color: $principal $principal $principal;
     }
-    .nav-tabs{
+
+    .nav-tabs {
         border-bottom: 1px solid $principal;
     }
+
     .nav-tabs .nav-link {
         border: 1px solid $principal;
         margin-right: .3rem;
     }
-    .nav-link:hover{
+
+    .nav-link:hover {
         background-color: $principal;
         color: $claro;
     }
-    .nav-item a{
+
+    .nav-item a {
         color: $principal;
     }
 }
@@ -247,7 +264,8 @@ Y. LA-RED
         border-radius: 1rem;
         padding: .2rem;
     }
-    h6{
+
+    h6 {
         color: $secundario;
         text-transform: uppercase;
     }
@@ -261,19 +279,28 @@ Y. LA-RED
         margin-top: 1.5rem;
         margin-bottom: .5rem;
     }
-    .estacion{
+
+    .estacion {
         display: flex;
         justify-content: center;
     }
-    .correspondencia{
+
+    .correspondencia {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-top: 1.5rem;
         margin-right: .25rem;
     }
-    .paso{
+
+    .paso {
         border-bottom: 1px solid red;
+    }
+
+    figcaption {
+        margin-top: .3rem;
+        text-align: center;
+        font-weight: bolder;
     }
 }
 
@@ -352,6 +379,30 @@ Y. OPERACION
 /* =============================================
 X. Show de las Medias Queries
 ============================================= */
+/* --------------Vista Sm ------------- */
+@media (min-width: 576px) {
+    .descripcion {
+
+        &::before,
+        &::after {
+            content: ' ';
+            position: absolute;
+            width: 5rem;
+            height: .2rem;
+            background-color: currentcolor;
+            top: 0.6em;
+        }
+
+        &::before {
+            left: 4rem;
+        }
+
+        &::after {
+            right: 4rem;
+        }
+    }
+}
+
 /* --------------Vista Md ------------- */
 @media (min-width: 768px) {
     html {
@@ -367,6 +418,23 @@ X. Show de las Medias Queries
             font-size: 1rem;
         }
     }
+
+    .descripcion {
+
+        &::before,
+        &::after {
+            width: 2rem;
+
+        }
+
+        &::before {
+            left: -0.6rem;
+        }
+
+        &::after {
+            right: -0.6rem;
+        }
+    }
 }
 
 /* --------------Vista Lg ------------- */
@@ -374,6 +442,23 @@ X. Show de las Medias Queries
     #inicio {
         .logo img {
             width: 16rem;
+        }
+    }
+
+    .descripcion {
+
+        &::before,
+        &::after {
+            width: 5rem;
+
+        }
+
+        &::before {
+            left: 2.5rem;
+        }
+
+        &::after {
+            right: 2.5rem;
         }
     }
 }
@@ -387,6 +472,23 @@ X. Show de las Medias Queries
     #inicio {
         .logo img {
             width: 14rem;
+        }
+    }
+
+    .descripcion {
+
+        &::before,
+        &::after {
+            width: 7rem;
+
+        }
+
+        &::before {
+            left: 5.5rem;
+        }
+
+        &::after {
+            right: 5.5rem;
         }
     }
 

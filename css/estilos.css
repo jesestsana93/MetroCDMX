@@ -26,6 +26,8 @@ body {
 .btn-primary {
   background-color: #f79239 !important;
   border-color: transparent;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 .btn-primary:focus, .btn-primary.active, .btn-primary:hover {
   background-color: #FF6308 !important;
@@ -90,6 +92,13 @@ h3 {
 
 .linea12 {
   background-color: #B99E51;
+}
+
+.descripcion {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f79239;
 }
 
 /*------------------------------
@@ -173,7 +182,8 @@ Y. FOOTER
 /*------------------------------
 Y. LA-RED
 --------------------------------*/
-.mapa-de-la-red .nav-tabs .nav-item.show .nav-link, .mapa-de-la-red .nav-tabs .nav-link.active {
+.mapa-de-la-red .nav-tabs .nav-item.show .nav-link,
+.mapa-de-la-red .nav-tabs .nav-link.active {
   color: white;
   background-color: #f79239;
   border-color: #f79239 #f79239 #f79239;
@@ -238,6 +248,11 @@ Y. LA-RED
 }
 .la-red .paso {
   border-bottom: 1px solid red;
+}
+.la-red figcaption {
+  margin-top: .3rem;
+  text-align: center;
+  font-weight: bolder;
 }
 
 /*------------------------------
@@ -316,6 +331,23 @@ Y. OPERACION
 /* =============================================
 X. Show de las Medias Queries
 ============================================= */
+/* --------------Vista Sm ------------- */
+@media (min-width: 576px) {
+  .descripcion::before, .descripcion::after {
+    content: ' ';
+    position: absolute;
+    width: 5rem;
+    height: .2rem;
+    background-color: currentcolor;
+    top: 0.6em;
+  }
+  .descripcion::before {
+    left: 4rem;
+  }
+  .descripcion::after {
+    right: 4rem;
+  }
+}
 /* --------------Vista Md ------------- */
 @media (min-width: 768px) {
   html {
@@ -328,11 +360,31 @@ X. Show de las Medias Queries
   #inicio .navbar-dark .navbar-nav .nav-link {
     font-size: 1rem;
   }
+
+  .descripcion::before, .descripcion::after {
+    width: 2rem;
+  }
+  .descripcion::before {
+    left: -0.6rem;
+  }
+  .descripcion::after {
+    right: -0.6rem;
+  }
 }
 /* --------------Vista Lg ------------- */
 @media (min-width: 992px) {
   #inicio .logo img {
     width: 16rem;
+  }
+
+  .descripcion::before, .descripcion::after {
+    width: 5rem;
+  }
+  .descripcion::before {
+    left: 2.5rem;
+  }
+  .descripcion::after {
+    right: 2.5rem;
   }
 }
 /* --------------Vista Xl ------------- */
@@ -343,5 +395,15 @@ X. Show de las Medias Queries
 
   #inicio .logo img {
     width: 14rem;
+  }
+
+  .descripcion::before, .descripcion::after {
+    width: 7rem;
+  }
+  .descripcion::before {
+    left: 5.5rem;
+  }
+  .descripcion::after {
+    right: 5.5rem;
   }
 }
