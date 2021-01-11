@@ -61,11 +61,12 @@ body {
     border-color: transparent;
 }
 
-h3 {
+.subtitulo {
     text-align: center;
     text-transform: uppercase;
     color: $secundario;
     margin-top: .5rem;
+    font-size: 1.3rem;
 }
 
 .linea1 {
@@ -121,6 +122,7 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     color: $principal;
+    font-size: 1.5rem;
 }
 
 /*------------------------------
@@ -265,7 +267,7 @@ Y. LA-RED
         padding: .2rem;
     }
 
-    h6 {
+    .nombre-estacion {
         color: $secundario;
         text-transform: uppercase;
     }
@@ -301,6 +303,41 @@ Y. LA-RED
         margin-top: .3rem;
         text-align: center;
         font-weight: bolder;
+    }
+
+    .info-servicio {
+        display: flex;
+        align-items: center;
+    }
+
+    .servicios {
+        width: 6rem;
+        margin-bottom: .5rem;
+        margin-right: .5rem;
+    }
+
+    /*Tira estaciones*/
+    .estaciones {
+        position: absolute;
+        right: 0;
+        top: 59rem;
+        z-index: 1;
+        display: inline-block;
+
+        ul {
+            list-style: none;
+
+            li a {
+                display: inline-block;
+                padding: .1rem .2rem;
+                text-decoration: none;
+
+                img {
+                    width: 2rem;
+                    
+                }
+            }
+        }
     }
 }
 
@@ -401,6 +438,14 @@ X. Show de las Medias Queries
             right: 4rem;
         }
     }
+
+    .la-red {
+        /*Tira estaciones*/
+        .estaciones {
+            top: 55rem;
+        }
+
+    }
 }
 
 /* --------------Vista Md ------------- */
@@ -435,6 +480,14 @@ X. Show de las Medias Queries
             right: -0.6rem;
         }
     }
+
+    .la-red {
+        /*Tira estaciones*/
+        .estaciones {
+            top: 26rem;
+        }
+
+    }
 }
 
 /* --------------Vista Lg ------------- */
@@ -459,6 +512,13 @@ X. Show de las Medias Queries
 
         &::after {
             right: 2.5rem;
+        }
+    }
+
+    .la-red {
+        /*Tira estaciones*/
+        .estaciones {
+            top: 17rem;
         }
     }
 }
