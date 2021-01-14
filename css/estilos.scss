@@ -68,7 +68,7 @@ body {
     margin-top: .5rem;
     font-size: 1.3rem;
 }
-
+/*COLORES DE FONDO*/
 .linea1 {
     background-color: $linea1;
 }
@@ -116,12 +116,49 @@ body {
 .linea12 {
     background-color: $linea12;
 }
+/*COLORES DE TEXTO*/
+.linea-1{
+    color: $linea1 !important;
+}
+.linea-2{
+    color: $linea2 !important;
+}
+.linea-3{
+    color: $linea3 !important;
+}
+.linea-4{
+    color: $linea4 !important;
+}
+.linea-5{
+    color: $linea5 !important;
+}
+.linea-6{
+    color: $linea6 !important;
+}
+.linea-7{
+    color: $linea7 !important;
+}
+.linea-8{
+    color: $linea8 !important;
+}
+.linea-9{
+    color: $linea9 !important;
+}
+.linea-A{
+    color: $lineaA !important;
+}
+.linea-B{
+    color: $lineaB !important;
+}
+.linea-12{
+    color: $linea12 !important;
+}
 
 .descripcion {
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    color: $principal;
+    color: currentColor;
     font-size: 1.5rem;
 }
 
@@ -262,7 +299,7 @@ Y. LA-RED
     }
 
     span {
-        color: white;
+        color: $claro;
         border-radius: 1rem;
         padding: .2rem;
     }
@@ -293,10 +330,6 @@ Y. LA-RED
         justify-content: center;
         margin-top: 1.5rem;
         margin-right: .25rem;
-    }
-
-    .paso {
-        border-bottom: 1px solid red;
     }
 
     figcaption {
@@ -334,12 +367,59 @@ Y. LA-RED
 
                 img {
                     width: 2rem;
-                    
+
                 }
             }
         }
+
+        .tooltipEstacion {
+            position: relative;
+            text-decoration: none !important;
+            text-align: right;
+            font-weight: bold !important;
+            font-size: .8rem;
+
+            &:hover {
+                z-index: 999;
+
+                span {
+                    display: block;
+                    position: absolute;
+                    top: .2rem;
+                    right: 2.3rem;
+                    width: 7.5rem;
+                    padding: .1rem;
+                    color: $claro;
+                }
+            }
+
+            span {
+                display: none;
+                border-radius: 0;
+
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    background-color: currentcolor;
+                    left: -5%;
+                    bottom: 0;                    
+                    right:0;
+                    transform: translateX(-15%) translateY(5%) rotate(45deg);
+                }
+
+            }
+        }
+    }
+    .img-movil{
+        display: block;
+    width: 100%;
+    overflow-x: auto;
     }
 }
+
 
 /*------------------------------
 Y. OPERACION
@@ -440,6 +520,7 @@ X. Show de las Medias Queries
     }
 
     .la-red {
+
         /*Tira estaciones*/
         .estaciones {
             top: 55rem;
@@ -482,6 +563,7 @@ X. Show de las Medias Queries
     }
 
     .la-red {
+
         /*Tira estaciones*/
         .estaciones {
             top: 26rem;
@@ -516,6 +598,7 @@ X. Show de las Medias Queries
     }
 
     .la-red {
+
         /*Tira estaciones*/
         .estaciones {
             top: 17rem;

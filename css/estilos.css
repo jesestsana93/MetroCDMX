@@ -47,6 +47,7 @@ body {
   font-size: 1.3rem;
 }
 
+/*COLORES DE FONDO*/
 .linea1 {
   background-color: #F56394;
 }
@@ -95,11 +96,60 @@ body {
   background-color: #B99E51;
 }
 
+/*COLORES DE TEXTO*/
+.linea-1 {
+  color: #F56394 !important;
+}
+
+.linea-2 {
+  color: #0265A9 !important;
+}
+
+.linea-3 {
+  color: #AE9D27 !important;
+}
+
+.linea-4 {
+  color: #6FB6AE !important;
+}
+
+.linea-5 {
+  color: #FDE104 !important;
+}
+
+.linea-6 {
+  color: #FF1001 !important;
+}
+
+.linea-7 {
+  color: #FF6308 !important;
+}
+
+.linea-8 {
+  color: #018748 !important;
+}
+
+.linea-9 {
+  color: #5D2B2A !important;
+}
+
+.linea-A {
+  color: #A3277D !important;
+}
+
+.linea-B {
+  color: #A8A8A8 !important;
+}
+
+.linea-12 {
+  color: #B99E51 !important;
+}
+
 .descripcion {
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  color: #f79239;
+  color: currentColor;
   font-size: 1.5rem;
 }
 
@@ -251,9 +301,6 @@ Y. LA-RED
   margin-top: 1.5rem;
   margin-right: .25rem;
 }
-.la-red .paso {
-  border-bottom: 1px solid red;
-}
 .la-red figcaption {
   margin-top: .3rem;
   text-align: center;
@@ -289,6 +336,46 @@ Y. LA-RED
 }
 .la-red .estaciones ul li a img {
   width: 2rem;
+}
+.la-red .estaciones .tooltipEstacion {
+  position: relative;
+  text-decoration: none !important;
+  text-align: right;
+  font-weight: bold !important;
+  font-size: .8rem;
+}
+.la-red .estaciones .tooltipEstacion:hover {
+  z-index: 999;
+}
+.la-red .estaciones .tooltipEstacion:hover span {
+  display: block;
+  position: absolute;
+  top: .2rem;
+  right: 2.3rem;
+  width: 7.5rem;
+  padding: .1rem;
+  color: white;
+}
+.la-red .estaciones .tooltipEstacion span {
+  display: none;
+  border-radius: 0;
+}
+.la-red .estaciones .tooltipEstacion span:before {
+  content: '';
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: currentcolor;
+  left: -5%;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateX(-15%) translateY(5%) rotate(45deg);
+          transform: translateX(-15%) translateY(5%) rotate(45deg);
+}
+.la-red .img-movil {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
 }
 
 /*------------------------------

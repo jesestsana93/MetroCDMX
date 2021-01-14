@@ -115,44 +115,50 @@ $(function () {
         X. SUBMENU ENTRE LAS LINEAS DEL METRO
     --------------------------------------------------------------------*/
     function menulineas() {
+        if (pageName == 'esta') {
+            path = '../';
+        }else{
+            path = '';
+        }
+        
         $('#menulineas').append(` 
         <div class="container mt-5">
             <div class="row mt-5 text-center">
                 <div class="col-3 col-sm-2 col-lg-1 linea1 mt-4 p-3 p-lg-1">
-                    <a href="linea-1.html">Línea 1</a>
+                    <a href="` + path + `linea-1.html">Línea 1</a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea2 mt-4 p-3 p-lg-1">
-                    <a href="linea-2.html">Línea 2</a>
+                    <a href="` + path + `linea-2.html">Línea 2</a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea3 mt-4 p-3 p-lg-1">
-                    <a href="linea-3.html">Línea 3</a>
+                    <a href="` + path + `linea-3.html">Línea 3</a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea4 mt-4 p-3 p-lg-1">
-                    <a href="linea-4.html">Línea 4</a>
+                    <a href="` + path + `linea-4.html">Línea 4</a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea5 mt-sm-4 p-3 p-lg-1">
-                    <a href="linea-5.html">Línea 5</a>
+                    <a href="` + path + `linea-5.html">Línea 5</a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea6 mt-sm-4 p-3 p-lg-1">
-                    <a href="linea-6.html">Línea 6</a>
+                    <a href="` + path + `linea-6.html">Línea 6</a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea7 mt-lg-4 p-3 p-lg-1">
-                    <a href="linea-7.html">Línea 7</a>
+                    <a href="` + path + `linea-7.html">Línea 7</a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea8 mt-lg-4 p-3 p-lg-1">
-                    <a href="linea-8.html">Línea 8</a>
+                    <a href="` + path + `linea-8.html">Línea 8</a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea9 mt-lg-4 p-3 p-lg-1">
-                    <a href="linea-9.html">Línea 9</a>
+                    <a href="` + path + `linea-9.html">Línea 9</a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 lineaA mt-lg-4 p-3 p-lg-1">
-                    <a href="linea-A.html">Línea A</a>
+                    <a href="` + path + `linea-A.html">Línea A</a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 lineaB mt-lg-4 p-3 p-lg-1">
-                    <a href="linea-B.html">Línea B</a>
+                    <a href="` + path + `linea-B.html">Línea B</a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea12 mt-lg-4  p-3 p-lg-1">
-                    <a href="linea-12.html">Línea 12</a>
+                    <a href="` + path + `linea-12.html">Línea 12</a>
                 </div>
             </div>
         </div>
