@@ -262,10 +262,15 @@ Y. LA-RED
   text-decoration: none;
   color: #44484a;
 }
-.la-red span {
+.la-red .linea-correspondencia {
   color: white;
-  border-radius: 1rem;
-  padding: .2rem;
+  margin-bottom: .8rem;
+  margin-right: .2rem;
+}
+.la-red .linea-correspondencia span {
+  padding: .35rem;
+  font-weight: bolder;
+  border-top-right-radius: .5rem;
 }
 .la-red .nombre-estacion {
   color: #11BB00;
@@ -318,6 +323,34 @@ Y. LA-RED
   width: 6rem;
   margin-bottom: .5rem;
   margin-right: .5rem;
+}
+.la-red .estacion-correspondencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  color: white;
+  padding: .5rem;
+  border-top-right-radius: 3.3rem;
+  width: 6rem;
+  margin-bottom: .5rem;
+  margin-right: .5rem;
+}
+.la-red .estacion-correspondencia .forma-c {
+  font-size: .6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
 .la-red .estaciones {
   position: absolute;

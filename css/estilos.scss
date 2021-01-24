@@ -68,6 +68,7 @@ body {
     margin-top: .5rem;
     font-size: 1.3rem;
 }
+
 /*COLORES DE FONDO*/
 .linea1 {
     background-color: $linea1;
@@ -116,41 +117,53 @@ body {
 .linea12 {
     background-color: $linea12;
 }
+
 /*COLORES DE TEXTO*/
-.linea-1{
+.linea-1 {
     color: $linea1 !important;
 }
-.linea-2{
+
+.linea-2 {
     color: $linea2 !important;
 }
-.linea-3{
+
+.linea-3 {
     color: $linea3 !important;
 }
-.linea-4{
+
+.linea-4 {
     color: $linea4 !important;
 }
-.linea-5{
+
+.linea-5 {
     color: $linea5 !important;
 }
-.linea-6{
+
+.linea-6 {
     color: $linea6 !important;
 }
-.linea-7{
+
+.linea-7 {
     color: $linea7 !important;
 }
-.linea-8{
+
+.linea-8 {
     color: $linea8 !important;
 }
-.linea-9{
+
+.linea-9 {
     color: $linea9 !important;
 }
-.linea-A{
+
+.linea-A {
     color: $lineaA !important;
 }
-.linea-B{
+
+.linea-B {
     color: $lineaB !important;
 }
-.linea-12{
+
+.linea-12 {
     color: $linea12 !important;
 }
 
@@ -298,10 +311,16 @@ Y. LA-RED
         color: $texto;
     }
 
-    span {
+    .linea-correspondencia {
         color: $claro;
-        border-radius: 1rem;
-        padding: .2rem;
+        margin-bottom: .8rem;
+        margin-right: .2rem;
+
+        span {
+            padding: .35rem;
+            font-weight: bolder;
+            border-top-right-radius: .5rem;
+        }
     }
 
     .nombre-estacion {
@@ -347,6 +366,28 @@ Y. LA-RED
         width: 6rem;
         margin-bottom: .5rem;
         margin-right: .5rem;
+    }
+
+    .estacion-correspondencia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: $claro;
+        //font-size: 3.5rem;
+        padding: .5rem;
+        border-top-right-radius: 3.3rem;
+        width: 6rem;
+        margin-bottom: .5rem;
+        margin-right: .5rem;
+
+        .forma-c {
+            font-size: .6rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
     }
 
     /*Tira estaciones*/
@@ -405,18 +446,20 @@ Y. LA-RED
                     height: 1.5rem;
                     background-color: currentcolor;
                     left: -5%;
-                    bottom: 0;                    
-                    right:0;
+                    bottom: 0;
+                    right: 0;
                     transform: translateX(-15%) translateY(5%) rotate(45deg);
                 }
 
             }
         }
     }
-    .img-movil{
+
+    .img-movil {
         margin-bottom: .5rem;
     }
-    h5{
+
+    h5 {
         color: $secundario;
     }
 }

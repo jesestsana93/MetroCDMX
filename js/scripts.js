@@ -125,7 +125,7 @@ $(function () {
         <div class="container mt-5">
             <div class="row mt-5 text-center">
                 <div class="col-3 col-sm-2 col-lg-1 linea1 mt-4 p-3 p-lg-1">
-                    <a href="` + path + `linea-1.html">Línea 1</a>
+                    <a href="` + path + `linea-1.html" title="Observatorio-Pantitlán">Línea 1</a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea2 mt-4 p-3 p-lg-1">
                     <a href="` + path + `linea-2.html">Línea 2</a>
