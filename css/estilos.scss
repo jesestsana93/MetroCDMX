@@ -414,9 +414,10 @@ Y. LA-RED
         }
     }
     .img-movil{
-        display: block;
-    width: 100%;
-    overflow-x: auto;
+        margin-bottom: .5rem;
+    }
+    h5{
+        color: $secundario;
     }
 }
 

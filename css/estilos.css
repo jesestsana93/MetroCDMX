@@ -373,9 +373,10 @@ Y. LA-RED
           transform: translateX(-15%) translateY(5%) rotate(45deg);
 }
 .la-red .img-movil {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
+  margin-bottom: .5rem;
+}
+.la-red h5 {
+  color: #11BB00;
 }
 
 /*------------------------------
