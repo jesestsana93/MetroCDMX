@@ -393,10 +393,10 @@ Y. LA-RED
 .la-red .estaciones .tooltipEstacion:hover span {
   display: block;
   position: absolute;
-  top: .2rem;
+  top: .1rem;
   right: 2.3rem;
-  width: 8.3rem;
-  padding: .1rem;
+  width: 9.5rem;
+  padding: .2rem;
   color: white;
 }
 .la-red .estaciones .tooltipEstacion span {
