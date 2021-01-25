@@ -379,125 +379,108 @@ $(function () {
                     </a>
                 </li>
                 <li>
-                    <a href="estacionXola.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/xola.png" alt="Xola"
+                    <a href="estacionDivisiondelNorte.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea03/division_del_norte.png" alt="DivisiondelNorte"
                             class="img-fluid">
-                        <span class="linea3">Xola</span>
+                        <span class="linea3">División del norte</span>
                     </a>
                 </li>
                 <li>
-                    <a href="estacionViaducto.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/viaducto.png" alt="Viaducto"
+                    <a href="estacionEugenia.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea03/eugenia.png" alt="Eugenia"
                             class="img-fluid">
-                        <span class="linea3">Viaducto</span>
+                        <span class="linea3">Eugenia</span>
                     </a>
                 </li>
                 <li>
-                    <a href="estacionChabacano.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/chabacano.png" alt="Chabacano"
+                    <a href="estacionEtiopia.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea03/etiopia.png" alt="Etiopia"
                             class="img-fluid">
-                        <span class="linea2">Chabacano</span>
+                        <span class="linea3">Etiopía</span>
                     </a>
                 </li>
                 <li>
-                    <a href="estacionSanAntonioAbad.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/san_antonio_abad.png" alt="SanAntonioAbad"
+                    <a href="estacionCentroMedico.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea03/centro_medico.png" alt="CentroMedico"
                             class="img-fluid">
-                        <span class="linea2">San Antonio Abad</span>
+                        <span class="linea3">Centro médico</span>
                     </a>
                 </li>
                 <li>
-                    <a href="estacionPinoSuarez.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/pino_suarez.png" alt="pinosuarez"
+                    <a href="estacionHospitalGeneral.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea03/hospital_general.png" alt="HospitalGeneral"
                             class="img-fluid">
-                        <span class="linea2">Pino Suárez</span>
+                        <span class="linea3">Hospital General</span>
                     </a>
                 </li>
                 <li>
-                    <a href="estacionZocalo.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/zocalo.png" alt="zocalo"
+                    <a href="estacionNinosHeroes.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea03/poderjudical.png" alt="NinosHeroes"
                             class="img-fluid">
-                        <span class="linea2">Zócalo</span>
+                        <span class="linea3">Niños héroes</span>
                     </a>
                 </li>
                 <li>
-                    <a href="estacionAllende.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/allende.png" alt="Allende"
+                    <a href="estacionBalderas.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea03/balderas.png" alt="Balderas"
                             class="img-fluid">
-                        <span class="linea2">Allende</span>
+                        <span class="linea3">Balderas</span>
                     </a>
                 </li>
                 <li>
-                    <a href="estacionBellasArtes.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/bellas_artes.png" alt="BellasArtes"
+                    <a href="estacionJuarez.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea03/juarez.png" alt="Juarez"
                             class="img-fluid">
-                        <span class="linea2">Bellas Artes</span>
+                        <span class="linea3">Juárez</span>
                     </a>
                 </li>
                 <li>
                     <a href="estacionHidalgo.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/hidalgo.png" alt="Hidalgo"
+                        <img src="../../images/la-red/linea03/hidalgo.png" alt="Hidalgo"
                             class="img-fluid">
-                        <span class="linea2">Hidalgo</span>
+                        <span class="linea3">Hidalgo</span>
                     </a>
                 </li>
                 <li>
-                    <a href="estacionRevolucion.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/revolucion.png" alt="Revolucion"
+                    <a href="estacionGuerrero.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea03/guerrero.png" alt="Guerrero"
                             class="img-fluid">
-                        <span class="linea2">Revolución</span>
+                        <span class="linea3">Guerrero</span>
                     </a>
                 </li>
                 <li>
-                    <a href="estacionSanCosme.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/san_cosme.png"
-                            alt="San Cosme" class="img-fluid">
-                        <span class="linea2">San Cosme</span>
+                    <a href="estacionTlatelolco.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea03/tlatelolco.png"
+                            alt="Tlatelolco" class="img-fluid">
+                        <span class="linea3">Tlatelolco</span>
                     </a>
                 </li>
                 <li>
-                    <a href="estacionNormal.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/normal.png" alt="Normal"
+                    <a href="estacionLaraza.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea03/la_raza.png" alt="Laraza"
                             class="img-fluid">
-                        <span class="linea2">Normal</span>
+                        <span class="linea3">La raza</span>
                     </a>
                 </li>
                 <li>
-                    <a href="estacionColegioMilitar.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/colegio_militar.png" alt="Colegio Militar"
+                    <a href="estacionPotrero.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea03/potrero.png" alt="Potrero"
                             class="img-fluid">
-                        <span class="linea2">Colegio Militar</span>
+                        <span class="linea3">Potrero</span>
                     </a>
                 </li>
                 <li>
-                    <a href="estacionPopotla.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/popotla.png" alt="Popotla"
+                    <a href="estacionDeportivo18demarzo.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea03/deportivo_18_de_marzo.png" alt="Deportivo18demarzo"
                             class="img-fluid">
-                        <span class="linea2">Popotla</span>
+                        <span class="linea3">Dptvo.18 de marzo</span>
                     </a>
                 </li>
                 <li>
-                    <a href="estacionCuitlahuac.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/cuitlahuac.png" alt="Cuitlahuac" class="img-fluid">
-                        <span class="linea2">Cuitláhuac</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="estacionTacuba.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/tacuba.png" alt="Tacuba" class="img-fluid">
-                        <span class="linea2">Tacuba</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="estacionPanteones.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/panteones.png" alt="Panteones" class="img-fluid">
-                        <span class="linea2">Panteones</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="estacionCuatroCaminos.html" class="tooltipEstacion">
-                        <img src="../../images/la-red/linea02/cuatro_caminos.png" alt="Cuatro caminos" class="img-fluid">
-                        <span class="linea2">Cuatro caminos</span>
+                    <a href="estacionIndiosVerdes.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea03/indios_verdes.png" alt="IndiosVerdes" 
+                        class="img-fluid">
+                        <span class="linea3">Indios verdes</span>
                     </a>
                 </li>
             </ul>

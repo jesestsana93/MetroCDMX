@@ -49,51 +49,51 @@ body {
 
 /*COLORES DE FONDO*/
 .linea1 {
-  background-color: #F56394;
+  background-color: #F56394 !important;
 }
 
 .linea2 {
-  background-color: #0265A9;
+  background-color: #0265A9 !important;
 }
 
 .linea3 {
-  background-color: #AE9D27;
+  background-color: #AE9D27 !important;
 }
 
 .linea4 {
-  background-color: #6FB6AE;
+  background-color: #6FB6AE !important;
 }
 
 .linea5 {
-  background-color: #FDE104;
+  background-color: #FDE104 !important;
 }
 
 .linea6 {
-  background-color: #FF1001;
+  background-color: #FF1001 !important;
 }
 
 .linea7 {
-  background-color: #FF6308;
+  background-color: #FF6308 !important;
 }
 
 .linea8 {
-  background-color: #018748;
+  background-color: #018748 !important;
 }
 
 .linea9 {
-  background-color: #5D2B2A;
+  background-color: #5D2B2A !important;
 }
 
 .lineaA {
-  background-color: #A3277D;
+  background-color: #A3277D !important;
 }
 
 .lineaB {
-  background-color: #A8A8A8;
+  background-color: #A8A8A8 !important;
 }
 
 .linea12 {
-  background-color: #B99E51;
+  background-color: #B99E51 !important;
 }
 
 /*COLORES DE TEXTO*/
@@ -230,6 +230,11 @@ Y. FOOTER
   text-decoration: none;
   color: white;
 }
+#menulineas .linea {
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
 /*------------------------------
 Y. LA-RED
@@ -318,6 +323,11 @@ Y. LA-RED
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid #f79239;
+  margin-bottom: .4rem;
+}
+.la-red .info-servicio:last-child {
+  border-bottom: none;
 }
 .la-red .servicios {
   width: 6rem;
@@ -338,7 +348,7 @@ Y. LA-RED
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: black;
+  background-color: #f79239;
   color: white;
   padding: .5rem;
   border-top-right-radius: 3.3rem;
@@ -346,16 +356,16 @@ Y. LA-RED
   margin-bottom: .5rem;
   margin-right: .5rem;
 }
-.la-red .estacion-correspondencia .forma-c {
+.la-red .estacion-correspondencia .transbordo {
   font-size: .6rem;
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase;
   text-align: center;
 }
 .la-red .estaciones {
   position: absolute;
   right: 0;
-  top: 59rem;
+  top: 80rem;
   z-index: 1;
   display: inline-block;
 }
@@ -385,7 +395,7 @@ Y. LA-RED
   position: absolute;
   top: .2rem;
   right: 2.3rem;
-  width: 7.5rem;
+  width: 8.3rem;
   padding: .1rem;
   color: white;
 }
@@ -504,13 +514,6 @@ X. Show de las Medias Queries
   .descripcion::after {
     right: 4rem;
   }
-
-  .la-red {
-    /*Tira estaciones*/
-  }
-  .la-red .estaciones {
-    top: 55rem;
-  }
 }
 /* --------------Vista Md ------------- */
 @media (min-width: 768px) {
@@ -539,7 +542,7 @@ X. Show de las Medias Queries
     /*Tira estaciones*/
   }
   .la-red .estaciones {
-    top: 26rem;
+    top: 34rem;
   }
 }
 /* --------------Vista Lg ------------- */
@@ -562,7 +565,50 @@ X. Show de las Medias Queries
     /*Tira estaciones*/
   }
   .la-red .estaciones {
-    top: 17rem;
+    top: 20rem;
+  }
+
+  #menulineas .linea {
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+  #menulineas .tooltipDireccion span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menulineas a.tooltipDireccion span {
+    display: none;
+    position: relative;
+    padding: .2rem;
+    width: 10rem;
+  }
+  #menulineas a.tooltipDireccion span:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: outset outset solid;
+    border-color: currentColor transparent transparent;
+  }
+  #menulineas a.tooltipDireccion:hover span {
+    display: inline;
+    position: absolute;
+    border: transparent;
+    font-size: .7rem;
+    top: 2.4rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 /* --------------Vista Xl ------------- */

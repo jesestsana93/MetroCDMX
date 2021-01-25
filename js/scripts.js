@@ -125,40 +125,76 @@ $(function () {
         <div class="container mt-5">
             <div class="row mt-5 text-center">
                 <div class="col-3 col-sm-2 col-lg-1 linea1 mt-4 p-3 p-lg-1">
-                    <a href="` + path + `linea-1.html" title="Observatorio-Pantitlán">Línea 1</a>
+                    <a href="` + path + `linea-1.html" class="tooltipDireccion">
+                        <p class="linea">Línea 1</p>
+                        <span class="linea1">Observatorio-Pantitlán</span>
+                    </a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea2 mt-4 p-3 p-lg-1">
-                    <a href="` + path + `linea-2.html">Línea 2</a>
+                    <a href="` + path + `linea-2.html" class="tooltipDireccion">
+                        <p class="linea">Línea 2</p>
+                        <span class="linea2">Tasqueña-Cuatro Caminos</span>
+                    </a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea3 mt-4 p-3 p-lg-1">
-                    <a href="` + path + `linea-3.html">Línea 3</a>
+                    <a href="` + path + `linea-3.html" class="tooltipDireccion">
+                        <p class="linea">Línea 3</p>
+                        <span class="linea3">Universidad-Indios verdes</span>
+                    </a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea4 mt-4 p-3 p-lg-1">
-                    <a href="` + path + `linea-4.html">Línea 4</a>
+                    <a href="` + path + `linea-4.html" class="tooltipDireccion">
+                        <p class="linea">Línea 4</p>
+                        <span class="linea4">Martín Carrera- Santa Anita</span>
+                    </a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea5 mt-sm-4 p-3 p-lg-1">
-                    <a href="` + path + `linea-5.html">Línea 5</a>
+                    <a href="` + path + `linea-5.html" class="tooltipDireccion">
+                        <p class="linea">Línea 5</p>
+                        <span class="linea5">Pantitlán-Politécnico</span>
+                    </a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea6 mt-sm-4 p-3 p-lg-1">
-                    <a href="` + path + `linea-6.html">Línea 6</a>
+                    <a href="` + path + `linea-6.html" class="tooltipDireccion">
+                        <p class="linea">Línea 6</p>
+                        <span class="linea6">El Rosario-Martín Carrera</span>
+                    </a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea7 mt-lg-4 p-3 p-lg-1">
-                    <a href="` + path + `linea-7.html">Línea 7</a>
+                    <a href="` + path + `linea-7.html" class="tooltipDireccion">
+                    <p class="linea">Línea 7</p>
+                    <span class="linea7">El Rosario-Barranca del muerto</span>
+                    </a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea8 mt-lg-4 p-3 p-lg-1">
-                    <a href="` + path + `linea-8.html">Línea 8</a>
+                    <a href="` + path + `linea-8.html" class="tooltipDireccion">
+                        <p class="linea">Línea 8</p>
+                        <span class="linea8">Constitución-Garibaldi</span>
+                    </a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 linea9 mt-lg-4 p-3 p-lg-1">
-                    <a href="` + path + `linea-9.html">Línea 9</a>
+                    <a href="` + path + `linea-9.html" class="tooltipDireccion">
+                        <p class="linea">Línea 9</p>
+                        <span class="linea9">Tacubaya-Pantitlán</span>
+                    </a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 lineaA mt-lg-4 p-3 p-lg-1">
-                    <a href="` + path + `linea-A.html">Línea A</a>
+                    <a href="` + path + `linea-A.html" class="tooltipDireccion">
+                        <p class="linea">Línea A</p>
+                        <span class="lineaA">Pantitlán-La Paz</span>
+                    </a>
                 </div>
                 <div class="col-3 col-sm-2 col-lg-1 lineaB mt-lg-4 p-3 p-lg-1">
-                    <a href="` + path + `linea-B.html">Línea B</a>
+                    <a href="` + path + `linea-B.html" class="tooltipDireccion">
+                        <p class="linea">Línea B</p>
+                        <span class="lineaB">Ciudad azteca-Garibaldi</span>
+                    </a>
                 </div>
-                <div class="col-3 col-sm-2 col-lg-1 linea12 mt-lg-4  p-3 p-lg-1">
-                    <a href="` + path + `linea-12.html">Línea 12</a>
+                <div class="col-3 col-sm-2 col-lg-1 linea12 mt-lg-4 p-3 p-lg-1">
+                    <a href="` + path + `linea-12.html" class="tooltipDireccion">
+                        <p class="linea">Línea 12</p>
+                        <span class="linea12">Mixcoac-Tláhuac</span>
+                    </a>
                 </div>
             </div>
         </div>

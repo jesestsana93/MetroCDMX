@@ -71,51 +71,51 @@ body {
 
 /*COLORES DE FONDO*/
 .linea1 {
-    background-color: $linea1;
+    background-color: $linea1 !important;
 }
 
 .linea2 {
-    background-color: $linea2;
+    background-color: $linea2 !important;
 }
 
 .linea3 {
-    background-color: $linea3;
+    background-color: $linea3 !important;
 }
 
 .linea4 {
-    background-color: $linea4;
+    background-color: $linea4 !important;
 }
 
 .linea5 {
-    background-color: $linea5;
+    background-color: $linea5 !important;
 }
 
 .linea6 {
-    background-color: $linea6;
+    background-color: $linea6 !important;
 }
 
 .linea7 {
-    background-color: $linea7;
+    background-color: $linea7 !important;
 }
 
 .linea8 {
-    background-color: $linea8;
+    background-color: $linea8 !important;
 }
 
 .linea9 {
-    background-color: $linea9;
+    background-color: $linea9 !important;
 }
 
 .lineaA {
-    background-color: $lineaA;
+    background-color: $lineaA !important;
 }
 
 .lineaB {
-    background-color: $lineaB;
+    background-color: $lineaB !important;
 }
 
 .linea12 {
-    background-color: $linea12;
+    background-color: $linea12 !important;
 }
 
 /*COLORES DE TEXTO*/
@@ -272,6 +272,12 @@ Y. FOOTER
         text-decoration: none;
         color: $claro;
     }
+
+    .linea {
+        margin: 0;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }
 
 /*------------------------------
@@ -360,6 +366,12 @@ Y. LA-RED
     .info-servicio {
         display: flex;
         align-items: center;
+        border-bottom: 1px solid $principal;
+        margin-bottom: .4rem;
+
+        &:last-child {
+            border-bottom: none;
+        }
     }
 
     .servicios {
@@ -373,18 +385,17 @@ Y. LA-RED
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: black;
+        background-color: $principal;
         color: $claro;
-        //font-size: 3.5rem;
         padding: .5rem;
         border-top-right-radius: 3.3rem;
         width: 6rem;
         margin-bottom: .5rem;
         margin-right: .5rem;
 
-        .forma-c {
+        .transbordo {
             font-size: .6rem;
-            font-weight: bold;
+            font-weight: 900;
             text-transform: uppercase;
             text-align: center;
         }
@@ -394,7 +405,7 @@ Y. LA-RED
     .estaciones {
         position: absolute;
         right: 0;
-        top: 59rem;
+        top: 80rem;
         z-index: 1;
         display: inline-block;
 
@@ -428,7 +439,7 @@ Y. LA-RED
                     position: absolute;
                     top: .2rem;
                     right: 2.3rem;
-                    width: 7.5rem;
+                    width: 8.3rem;
                     padding: .1rem;
                     color: $claro;
                 }
@@ -437,7 +448,6 @@ Y. LA-RED
             span {
                 display: none;
                 border-radius: 0;
-
 
                 &:before {
                     content: '';
@@ -450,7 +460,6 @@ Y. LA-RED
                     right: 0;
                     transform: translateX(-15%) translateY(5%) rotate(45deg);
                 }
-
             }
         }
     }
@@ -463,7 +472,6 @@ Y. LA-RED
         color: $secundario;
     }
 }
-
 
 /*------------------------------
 Y. OPERACION
@@ -562,15 +570,6 @@ X. Show de las Medias Queries
             right: 4rem;
         }
     }
-
-    .la-red {
-
-        /*Tira estaciones*/
-        .estaciones {
-            top: 55rem;
-        }
-
-    }
 }
 
 /* --------------Vista Md ------------- */
@@ -610,7 +609,7 @@ X. Show de las Medias Queries
 
         /*Tira estaciones*/
         .estaciones {
-            top: 26rem;
+            top: 34rem;
         }
 
     }
@@ -645,7 +644,49 @@ X. Show de las Medias Queries
 
         /*Tira estaciones*/
         .estaciones {
-            top: 17rem;
+            top: 20rem;
+        }
+    }
+
+    #menulineas {
+        .linea {
+            font-weight: normal;
+            text-transform: capitalize;
+        }
+        
+        .tooltipDireccion span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a.tooltipDireccion span {
+            display: none;
+            position: relative;            
+            padding: .2rem;
+            width: 10rem;
+
+            &:after {
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                bottom: 40%;
+                left: 50%;
+                margin-left: -10px;
+                border-width: 10px;
+                border-style: outset outset solid;
+                border-color: currentColor transparent transparent;
+            }
+        }
+        
+        a.tooltipDireccion:hover span {
+            display: inline;
+            position: absolute;
+            border: transparent;           
+            font-size: .7rem;
+            top: 2.4rem;
+            transform: translateX(-50%);
         }
     }
 }
