@@ -6,6 +6,14 @@ $(function () {
     linea1();
     linea2();
     linea3();
+    linea4();
+    linea5();
+    linea6();
+    linea7();
+    linea8();
+    linea9();
+    lineaB();
+    linea12();
 
     /*****************************************************************************
                                 LINEA 1
@@ -490,10 +498,162 @@ $(function () {
     /*****************************************************************************
                                 LINEA 4
     ******************************************************************************/
+    function linea4() {
+        $('#linea-4').append(`
+            <ul>
+                <li>
+                    <a href="estacionMartinCarrera.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/martin_carrera.png" alt="MartinCarrera"
+                            class="img-fluid">
+                        <span class="linea4">Martín Carrera</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionTalisman.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/talisman.png" alt="Talisman"
+                            class="img-fluid">
+                        <span class="linea4">Talisman</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionBondojito.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/bondojito.png" alt="Bondojito"
+                            class="img-fluid">
+                        <span class="linea4">Bondojito</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionConsulado.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/consulado.png" alt="Consulado"
+                            class="img-fluid">
+                            <span class="linea4">Consulado</span> 
+                        </a>
+                    </li>
+                <li>
+                    <a href="estacionCanaldelnorte.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/canal_del_norte.png" alt="Canaldelnorte" 
+                            class="img-fluid">
+                        <span class="linea4">Canal del norte</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionMorelos.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/morelos.png" alt="Morelos"
+                            class="img-fluid">
+                        <span class="linea4">Morelos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionCandelaria.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/candelaria.png" alt="Candelaria"
+                            class="img-fluid">
+                        <span class="linea4">Candelaria</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionFrayServando.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/fray_servando.png" alt="FrayServando"
+                            class="img-fluid">
+                        <span class="linea4">Fray Servando</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionJamaica.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/jamaica.png" alt="Jamaica"
+                            class="img-fluid">
+                        <span class="linea4">Jamaica</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionSantaAnita.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/santa_anita.png" alt="Santa Anita"
+                            class="img-fluid">
+                        <span class="linea4">Santa Anita</span>
+                    </a>
+                </li>           
+            </ul>
+        `);
+    };
 
     /*****************************************************************************
                                 LINEA 5
     ******************************************************************************/
+    function linea5() {
+        $('#linea-5').append(`
+            <ul>
+                <li>
+                    <a href="estacionPantitlan.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea05/pantitlan.png" alt="Pantitlan"
+                            class="img-fluid">
+                        <span class="linea5">Pantitlán</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionTalisman.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/talisman.png" alt="Talisman"
+                            class="img-fluid">
+                        <span class="linea4">Talisman</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionBondojito.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/bondojito.png" alt="Bondojito"
+                            class="img-fluid">
+                        <span class="linea4">Bondojito</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionConsulado.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/consulado.png" alt="Consulado"
+                            class="img-fluid">
+                            <span class="linea4">Consulado</span> 
+                        </a>
+                    </li>
+                <li>
+                    <a href="estacionCanaldelnorte.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/canal_del_norte.png" alt="Canaldelnorte" 
+                            class="img-fluid">
+                        <span class="linea4">Canal del norte</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionMorelos.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/morelos.png" alt="Morelos"
+                            class="img-fluid">
+                        <span class="linea4">Morelos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionCandelaria.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/candelaria.png" alt="Candelaria"
+                            class="img-fluid">
+                        <span class="linea4">Candelaria</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionFrayServando.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/fray_servando.png" alt="FrayServando"
+                            class="img-fluid">
+                        <span class="linea4">Fray Servando</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionJamaica.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/jamaica.png" alt="Jamaica"
+                            class="img-fluid">
+                        <span class="linea4">Jamaica</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="estacionSantaAnita.html" class="tooltipEstacion">
+                        <img src="../../images/la-red/linea04/santa_anita.png" alt="Santa Anita"
+                            class="img-fluid">
+                        <span class="linea4">Santa Anita</span>
+                    </a>
+                </li>           
+            </ul>
+        `);
+    };
 
     /*****************************************************************************
                                 LINEA 6
