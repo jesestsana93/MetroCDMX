@@ -131,7 +131,7 @@ $(function () {
                     <a href="estacionBalbuena.html" class="tooltipEstacion">
                         <img src="../../images/la-red/linea01/balbuena.png" alt="balbuena"
                             class="img-fluid">
-                        <span class="linea1">Baulbuena</span>
+                        <span class="linea1">Balbuena</span>
                     </a>
                 </li>
                 <li>

@@ -61,6 +61,14 @@ body {
     border-color: transparent;
 }
 
+.titulo{
+    text-align: center;
+    text-transform: uppercase;
+    color: $principal;
+    margin-top: .5rem;
+    font-size: 2rem;
+}
+
 .subtitulo {
     text-align: center;
     text-transform: uppercase;
@@ -262,6 +270,10 @@ Y. FOOTER
             }
         }
     }
+    hr{
+        height: 1px;
+        background-color: $claro;
+    }
 }
 
 /* =============================================
@@ -388,7 +400,7 @@ Y. LA-RED
         background-color: $principal;
         color: $claro;
         padding: .5rem;
-        border-top-right-radius: 3.3rem;
+        border-top-right-radius: 2.3rem;
         width: 6rem;
         margin-bottom: .5rem;
         margin-right: .5rem;

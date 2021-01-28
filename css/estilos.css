@@ -39,6 +39,14 @@ body {
   border-color: transparent;
 }
 
+.titulo {
+  text-align: center;
+  text-transform: uppercase;
+  color: #f79239;
+  margin-top: .5rem;
+  font-size: 2rem;
+}
+
 .subtitulo {
   text-align: center;
   text-transform: uppercase;
@@ -222,6 +230,10 @@ Y. FOOTER
 #footer ul li a:hover {
   color: #f79239;
 }
+#footer hr {
+  height: 1px;
+  background-color: white;
+}
 
 /* =============================================
  PAGINAS INTERNAS
@@ -351,7 +363,7 @@ Y. LA-RED
   background-color: #f79239;
   color: white;
   padding: .5rem;
-  border-top-right-radius: 3.3rem;
+  border-top-right-radius: 2.3rem;
   width: 6rem;
   margin-bottom: .5rem;
   margin-right: .5rem;

@@ -205,63 +205,73 @@ $(function () {
     --------------------------------------------------------------------*/
     function footer() {
         $('footer').append(`  
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <h3>Atención ciudadana</h3>
-                    <ul>
-                        <li>Dirección: Avenida Balderas 58
-                            Colonia Centro , Delegación Cuauhtémoc C.P. 06010, Ciudad de México</li>
-                        <li><i class="fas fa-phone-alt mr-2"></i>5627 4741</li>
-                        <li><i class="far fa-envelope mr-2"></i> unidad_de_orientacion@metro.cdmx.gob.mx</li>
-                    </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h3>Atención ciudadana</h3>
+                        <ul>
+                            <li>Dirección: Avenida Balderas 58
+                                Colonia Centro , Delegación Cuauhtémoc C.P. 06010, Ciudad de México</li>
+                            <li><i class="fas fa-phone-alt mr-2"></i>5627 4741</li>
+                            <li><i class="far fa-envelope mr-2"></i> unidad_de_orientacion@metro.cdmx.gob.mx</li>
+                        </ul>
 
-                    <h3>Horario de servicio</h3>
-                    <ul>
-                        <li><b>Días laborales</b> de 5:00 a 24 :00 horas.</li>
-                        <li><b>Sábados</b> de 6:00 a 24:00 horas.</li>
-                        <li><b>Domingos</b> y días festivos de 7:00 a 24:00 horas.</li>
-                        <li><b>Costo del boleto:</b> $5</li>
-                        <li><b>Acceso gratuito a</b> adultos mayores, personas con discapacidad, niños menores de 5 años,
-                            jóvenes del INJUVE y policías uniformados.</li>
-                    </ul>                    
-                </div>
-                <div class="col-12 col-md-6">
-                    <h3>Sitios relacionados</h3>
-                    <ul>
-                        <li><a href="https://www.cdmx.gob.mx/" target="_blank">Gobierno CDMX</a></li>
-                        <li><a href="http://www.semovi.cdmx.gob.mx/" target="_blank">Secretaría de Movilidad
-                                (SEMOVI)</a></li>
-                        <li><a href="https://www.ste.cdmx.gob.mx/" target="_blank">Servicio de transportes eléctricos de
-                                la CDMX</a></li>
-                        <li><a href="https://www.metrobus.cdmx.gob.mx/" target="_blank">Metrobus</a></li>
-                        <li><a href="#" target="_blank">Cablebus</a></li>
-                        <li><a href="https://www.ecobici.cdmx.gob.mx/" target="_blank">Ecobici</a></li>
-                        <li><a href="https://www.rtp.cdmx.gob.mx/" target="_blank">RTP</a></li>
-                        <li><a href="https://www.aicm.com.mx/" target="_blank">Aeropuerto Internacional de la CDMX</a>
-                        </li>
-                        <li><a href="https://www.lineauno.pe/" target="_blank">Metro de Perú</a></li>
-                        <li><a href="https://www.metrovias.com.ar/" target="_blank">Metro de Argentina</a></li>
-                        <li><a href="https://www.metro.cl/" target="_blank">Metro de Chile</a></li>
-                        <li><a href="https://www.metromadrid.es/es" target="_blank">Metro de Madrid</a></li>
-                    </ul>
+                        <h3>Horario de servicio</h3>
+                        <ul>
+                            <li><b>Días laborales</b> de 5:00 a 24 :00 horas.</li>
+                            <li><b>Sábados</b> de 6:00 a 24:00 horas.</li>
+                            <li><b>Domingos</b> y días festivos de 7:00 a 24:00 horas.</li>
+                            <li><b>Costo del boleto:</b> $5</li>
+                            <li><b>Acceso gratuito a</b> adultos mayores, personas con discapacidad, niños menores de 5 años,
+                                jóvenes del INJUVE y policías uniformados.</li>
+                        </ul>                    
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3>Sitios relacionados</h3>
+                        <ul>
+                            <li><a href="https://www.cdmx.gob.mx/" target="_blank">Gobierno CDMX</a></li>
+                            <li><a href="http://www.semovi.cdmx.gob.mx/" target="_blank">Secretaría de Movilidad
+                                    (SEMOVI)</a></li>
+                            <li><a href="https://www.ste.cdmx.gob.mx/" target="_blank">Servicio de transportes eléctricos de
+                                    la CDMX</a></li>
+                            <li><a href="https://www.metrobus.cdmx.gob.mx/" target="_blank">Metrobus</a></li>
+                            <li><a href="#" target="_blank">Cablebus</a></li>
+                            <li><a href="https://www.ecobici.cdmx.gob.mx/" target="_blank">Ecobici</a></li>
+                            <li><a href="https://www.rtp.cdmx.gob.mx/" target="_blank">RTP</a></li>
+                            <li><a href="https://www.aicm.com.mx/" target="_blank">Aeropuerto Internacional de la CDMX</a>
+                            </li>
+                            <li><a href="https://www.lineauno.pe/" target="_blank">Metro de Perú</a></li>
+                            <li><a href="https://www.metrovias.com.ar/" target="_blank">Metro de Argentina</a></li>
+                            <li><a href="https://www.metro.cl/" target="_blank">Metro de Chile</a></li>
+                            <li><a href="https://www.metromadrid.es/es" target="_blank">Metro de Madrid</a></li>
+                        </ul>
 
-                    <h3 class="mt-3">Redes sociales</h3>
-                    <ul class="d-flex justify-content-around">
-                        <li><a href="https://www.facebook.com/MetroCDMX" target="_blank"><i
-                                    class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://twitter.com/MetroCDMX" target="_blank"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li><a href="https://www.instagram.com/metrocdmx/" target="_blank"><i
-                                    class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://www.youtube.com/user/METROGDF" target="_blank"><i
-                                    class="fab fa-youtube"></i></a></li>
-                        <li><a href="https://soundcloud.com/audiometro-stc" target="_blank"><i
-                                    class="fab fa-soundcloud"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                        <h3 class="mt-3">Redes sociales</h3>
+                        <ul class="d-flex justify-content-around">
+                            <li><a href="https://www.facebook.com/MetroCDMX" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com/MetroCDMX" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/metrocdmx/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/user/METROGDF" target="_blank"><i
+                                        class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://soundcloud.com/audiometro-stc" target="_blank"><i
+                                        class="fab fa-soundcloud"></i></a></li>
+                        </ul>                        
+                    </div><!--col-->                    
+                    <div class="col-12 text-white">
+                        <hr>
+                        <p>Esta página no pretende sustituir ni reemplazar a la original. Esta página
+                        se hizo para fines educativos como proyecto personal sin fines de lucro. Lo que se trata de hacer 
+                        es mostrar la importancia que tiene este sistema de transporte en la CDMX. La información
+                        puesta, los íconos, entre otras cosas son propiedad intelectual del Sistema de Transporte Colectivo 
+                        Metro, por lo cual queda prohibida su reproducción parcial o total.
+                        </p>
+                        <p class="text-center">Copyright &copy; 2021 JESA | Desarrollador Web CDMX. Todos los derechos reservados.</p> 
+                    </div>
+                <div><!--row-->                           
+            </div><!--container-->
         `);
     };
 
