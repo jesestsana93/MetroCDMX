@@ -433,6 +433,9 @@ Y. LA-RED
 .la-red h5 {
   color: #11BB00;
 }
+.la-red .guerrero {
+  width: 9rem;
+}
 
 /*------------------------------
 Y. OPERACION
