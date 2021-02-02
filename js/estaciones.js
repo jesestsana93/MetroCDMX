@@ -1479,7 +1479,7 @@ $(function () {
                     </a>
                 </li> 
                 <li>
-                    <a href="estacionInsurgentes ur.html" class="tooltipEstacion">
+                    <a href="estacionInsurgentesSur.html" class="tooltipEstacion">
                         <img src="../../images/la-red/linea12/insurgentes_sur.png" alt="Insurgentes Sur"
                             class="img-fluid">
                         <span class="linea12">Insurgentes Sur</span>
