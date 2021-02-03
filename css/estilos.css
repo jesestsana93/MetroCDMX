@@ -166,14 +166,21 @@ body {
 --------------------------------*/
 #inicio {
   /*Boton del menu */
+  /*ESTILOS AL RELOJ*/
 }
-#inicio .logo img {
-  width: 16.5rem;
+#inicio .logoCDMX {
+  width: 10rem;
+}
+#inicio .logoMetro {
+  width: 8rem;
 }
 #inicio .navbar-dark .navbar-nav .nav-link {
   color: white;
   font-size: 1.5rem;
   text-align: center;
+}
+#inicio .navbar-brand {
+  margin-right: 0;
 }
 #inicio .boton-menu:before {
   content: "\f0c9";
@@ -202,6 +209,23 @@ body {
 }
 #inicio .navbar-nav .nav-item .dropdown-menu .dropdown-item:active {
   background-color: white;
+}
+#inicio #reloj {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #11BB00;
+  color: white;
+  border: transparent;
+  padding: .3rem;
+  font-size: 1.2rem;
+  text-align: center;
+  top: 4rem;
+  right: 4rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  z-index: -5;
 }
 
 /*------------------------------
@@ -515,8 +539,15 @@ X. Show de las Medias Queries
 ============================================= */
 /* --------------Vista Sm ------------- */
 @media (min-width: 576px) {
-  #inicio .logo img {
-    width: 20rem;
+  #inicio .logoCDMX {
+    width: 13rem;
+  }
+  #inicio .logoMetro {
+    width: 12rem;
+  }
+  #inicio #reloj {
+    top: 4.4rem;
+    right: 10rem;
   }
 
   .descripcion::before, .descripcion::after {
@@ -546,6 +577,16 @@ X. Show de las Medias Queries
   #inicio .navbar-dark .navbar-nav .nav-link {
     font-size: 1rem;
   }
+  #inicio .logoCDMX {
+    width: 11rem;
+  }
+  #inicio .logoMetro {
+    width: 10rem;
+  }
+  #inicio #reloj {
+    top: 3.7rem;
+    right: 10rem;
+  }
 
   .descripcion::before, .descripcion::after {
     width: 2rem;
@@ -566,8 +607,12 @@ X. Show de las Medias Queries
 }
 /* --------------Vista Lg ------------- */
 @media (min-width: 992px) {
-  #inicio .logo img {
-    width: 16rem;
+  #inicio .logoMetro {
+    margin-left: 3.3rem;
+  }
+  #inicio #reloj {
+    top: 4rem;
+    right: 7rem;
   }
 
   .descripcion::before, .descripcion::after {
@@ -636,8 +681,10 @@ X. Show de las Medias Queries
     font-size: 17px;
   }
 
-  #inicio .logo img {
-    width: 14rem;
+  #inicio #reloj {
+    top: 3.7rem;
+    right: 4rem;
+    display: block;
   }
 
   .descripcion::before, .descripcion::after {

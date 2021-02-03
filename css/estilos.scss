@@ -187,14 +187,20 @@ body {
 3. INICIO
 --------------------------------*/
 #inicio {
-    .logo img {
-        width: 16.5rem;
+    .logoCDMX  {
+        width: 10rem;
+    }
+    .logoMetro  {
+        width: 8rem;
     }
 
     .navbar-dark .navbar-nav .nav-link {
         color: $claro;
         font-size: 1.5rem;
         text-align: center;
+    }
+    .navbar-brand{
+        margin-right: 0;
     }
 
     /*Boton del menu */
@@ -237,6 +243,22 @@ body {
             }
         }
     }
+    /*ESTILOS AL RELOJ*/
+    #reloj{
+        position: fixed;
+        display:flex;
+        background-color: $secundario;
+        color: $claro;
+        border: transparent;
+        padding: .3rem;
+        font-size: 1.2rem;
+        text-align: center;
+        top: 4rem;
+        right: 4rem;
+        border-bottom-left-radius:1rem;
+        border-bottom-right-radius: 1rem;
+        z-index: -5;
+    }
 
 }
 
@@ -273,7 +295,7 @@ Y. FOOTER
     hr{
         height: 1px;
         background-color: $claro;
-    }
+    }   
 }
 
 /* =============================================
@@ -567,8 +589,15 @@ X. Show de las Medias Queries
 /* --------------Vista Sm ------------- */
 @media (min-width: 576px) {
     #inicio{
-        .logo img {
-            width: 20rem;
+        .logoCDMX  {
+            width: 13rem;
+        }
+        .logoMetro  {
+            width: 12rem;
+        }
+        #reloj{
+            top: 4.4rem;
+            right: 10rem;
         }
     }
 
@@ -608,6 +637,16 @@ X. Show de las Medias Queries
         .navbar-dark .navbar-nav .nav-link {
             font-size: 1rem;
         }
+        .logoCDMX  {
+            width: 11rem;            
+        }
+        .logoMetro  {
+            width: 10rem;
+        }
+        #reloj{
+            top: 3.7rem;
+            right: 10rem;
+        }
     }
 
     .descripcion {
@@ -640,8 +679,13 @@ X. Show de las Medias Queries
 /* --------------Vista Lg ------------- */
 @media (min-width: 992px) {
     #inicio {
-        .logo img {
-            width: 16rem;
+        .logoMetro  {
+            margin-left: 3.3rem;
+        }
+
+        #reloj{
+            top: 4rem;
+            right: 7rem;
         }
     }
 
@@ -720,8 +764,10 @@ X. Show de las Medias Queries
     }
 
     #inicio {
-        .logo img {
-            width: 14rem;
+        #reloj{
+            top: 3.7rem;
+            right: 4rem;
+            display:block;
         }
     }
 

@@ -22,6 +22,7 @@ $(function () {
     header();
     menulineas();
     footer();
+    reloj();
 
     /*-------------------------------------------------------------------
         X. HEADER DEL SITIO
@@ -31,83 +32,96 @@ $(function () {
         if (pageName == 'line' || pageName == 'mapa' || pageName == 'muse' || pageName == 'conf' || pageName == 'carr' || pageName == 'cron' || pageName == 'parq') {
             pathImg = '../images';
             path = '../';
-        } else if(pageName == 'esta'){
+        } else if (pageName == 'esta') {
             pathImg = '../../images';
             path = '../../';
-        }else{
+        } else {
             pathImg = 'images';
         }
         $('header').append(`
-        <nav id="menu-navegacion" class="navbar navbar-dark bg-primary navbar-expand-md">
-        <div class="container">
-            <!--LOGOTIPO DEL SITIO-->
-            <a href="` + path + `index.html" class="navbar-brand logo">
-                <img src="` + pathImg + `/logo_metro.png" alt="Logo STC Metro" class="img-fluid">
-            </a>
-            <!--BOTON DEL MENU RESPONSIVE-->
-            <button type="button" class="navbar-toggler d-md-none" data-toggle="collapse"
-                data-target="#menu-principal" aria-controls="menu-principal" arial-expanded="false"
-                arial-label="Desplegar menu de navegacion">
-                <span class="boton-menu"></span>
-            </button>
-            <!--BARRA DE NAVEGACION-->
-            <div class="collapse navbar-collapse" id="menu-principal">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="` + path + `index.html" class="nav-link">Inicio</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Nosotros</a></li>
-                    <li class="nav-item dropdown">
-                        <a href="" class="nav-link dropdown-toggle" id="redMetro" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">La red
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="redMetro">
-                            <a href="` + path + `la-red/mapa-de-la-red.html" class="dropdown-item">Mapa de la red</a>
-                            <a href="` + path + `la-red/linea-1.html" class="dropdown-item">Línea 1</a>
-                            <a href="` + path + `la-red/linea-2.html" class="dropdown-item">Línea 2</a>
-                            <a href="` + path + `la-red/linea-3.html" class="dropdown-item">Línea 3</a>
-                            <a href="` + path + `la-red/linea-4.html" class="dropdown-item">Línea 4</a>
-                            <a href="` + path + `la-red/linea-5.html" class="dropdown-item">Línea 5</a>
-                            <a href="` + path + `la-red/linea-6.html" class="dropdown-item">Línea 6</a>
-                            <a href="` + path + `la-red/linea-7.html" class="dropdown-item">Línea 7</a>
-                            <a href="` + path + `la-red/linea-8.html" class="dropdown-item">Línea 8</a>
-                            <a href="` + path + `la-red/linea-9.html" class="dropdown-item">Línea 9</a>
-                            <a href="` + path + `la-red/linea-A.html" class="dropdown-item">Línea A</a>
-                            <a href="` + path + `la-red/linea-B.html" class="dropdown-item">Línea B</a>
-                            <a href="` + path + `la-red/linea-12.html" class="dropdown-item">Línea 12</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="" class="nav-link dropdown-toggle" id="cultura" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cultura</a>
-                        <div class="dropdown-menu" aria-labelledby="cultura">
-                            <a href="` + path + `cultura/museo-del-metro.html" class="dropdown-item">Museo del metro</a>
-                            <a href="" class="dropdown-item">Galería fotográfica</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="" class="nav-link dropdown-toggle" id="operacion" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Operación</a>
-                        <div class="dropdown-menu" aria-labelledby="operacion">
-                            <a href="` + path + `operacion/parque-vehicular.html" class="dropdown-item">Parque vehicular</a>
-                            <a href="` + path + `operacion/carro-neumatico-y-ferreo.html" class="dropdown-item">Carro neumático y férreo</a>
-                            <a href="` + path + `operacion/conformacion-de-un-tren.html" class="dropdown-item">Conformación de un tren</a>
-                            <a href="` + path + `operacion/cronologia.html" class="dropdown-item">Cronología del metro</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="" class="nav-link dropdown-toggle" id="metro" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Metro</a>
-                        <div class="dropdown-menu" aria-labelledby="metro">
-                            <a href="" class="dropdown-item">Colección de tarjetas</a>
-                            <a href="" class="dropdown-item">Modelos a escala</a>
-                            <a href="" class="dropdown-item">Libros</a>
-                            <a href="" class="dropdown-item">Infografías</a>
-                        </div>
-                    </li>
-                </ul>
+            <nav id="menu-navegacion" class="navbar navbar-dark bg-primary navbar-expand-lg">
+                <div class="container">
+                    <!--LOGOTIPO DEL SITIO-->
+                    <a href="` + path + `index.html" class="navbar-brand ">
+                        <img src="` + pathImg + `/logo_gobCDMX.png" alt="Logo GOBCDMX" class="img-fluid logoCDMX">
+                    </a>
+                    <a href="` + path + `index.html" class="navbar-brand ">
+                        <img src="` + pathImg + `/logo_metro.png" alt="Logo STC Metro" class="img-fluid logoMetro">
+                    </a>                    
+                    <!--BOTON DEL MENU RESPONSIVE-->
+                    <button type="button" class="navbar-toggler d-lg-none" data-toggle="collapse"
+                        data-target="#menu-principal" aria-controls="menu-principal" arial-expanded="false"
+                        arial-label="Desplegar menu de navegacion">
+                        <span class="boton-menu"></span>
+                    </button>
+                    <!--BARRA DE NAVEGACION-->
+                    <div class="collapse navbar-collapse" id="menu-principal">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="` + path + `index.html" class="nav-link">Inicio</a></li>
+                            <li class="nav-item"><a href="" class="nav-link">Nosotros</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" id="redMetro" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">La red
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="redMetro">
+                                    <a href="` + path + `la-red/mapa-de-la-red.html" class="dropdown-item">Mapa de la red</a>
+                                    <a href="` + path + `la-red/linea-1.html" class="dropdown-item">Línea 1</a>
+                                    <a href="` + path + `la-red/linea-2.html" class="dropdown-item">Línea 2</a>
+                                    <a href="` + path + `la-red/linea-3.html" class="dropdown-item">Línea 3</a>
+                                    <a href="` + path + `la-red/linea-4.html" class="dropdown-item">Línea 4</a>
+                                    <a href="` + path + `la-red/linea-5.html" class="dropdown-item">Línea 5</a>
+                                    <a href="` + path + `la-red/linea-6.html" class="dropdown-item">Línea 6</a>
+                                    <a href="` + path + `la-red/linea-7.html" class="dropdown-item">Línea 7</a>
+                                    <a href="` + path + `la-red/linea-8.html" class="dropdown-item">Línea 8</a>
+                                    <a href="` + path + `la-red/linea-9.html" class="dropdown-item">Línea 9</a>
+                                    <a href="` + path + `la-red/linea-A.html" class="dropdown-item">Línea A</a>
+                                    <a href="` + path + `la-red/linea-B.html" class="dropdown-item">Línea B</a>
+                                    <a href="` + path + `la-red/linea-12.html" class="dropdown-item">Línea 12</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" id="cultura" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cultura</a>
+                                <div class="dropdown-menu" aria-labelledby="cultura">
+                                    <a href="` + path + `cultura/museo-del-metro.html" class="dropdown-item">Museo del metro</a>
+                                    <a href="" class="dropdown-item">Galería fotográfica</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" id="operacion" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Operación</a>
+                                <div class="dropdown-menu" aria-labelledby="operacion">
+                                    <a href="` + path + `operacion/parque-vehicular.html" class="dropdown-item">Parque vehicular</a>
+                                    <a href="` + path + `operacion/carro-neumatico-y-ferreo.html" class="dropdown-item">Carro neumático y férreo</a>
+                                    <a href="` + path + `operacion/conformacion-de-un-tren.html" class="dropdown-item">Conformación de un tren</a>
+                                    <a href="` + path + `operacion/cronologia.html" class="dropdown-item">Cronología del metro</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" id="metro" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Metro</a>
+                                <div class="dropdown-menu" aria-labelledby="metro">
+                                    <a href="" class="dropdown-item">Colección de tarjetas</a>
+                                    <a href="" class="dropdown-item">Modelos a escala</a>
+                                    <a href="" class="dropdown-item">Libros</a>
+                                    <a href="" class="dropdown-item">Infografías</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="reloj">
+                <div class="fecha mr-3">
+                    <span id="diaSemana" class="diaSemana"></span>, 
+                    <span id="dia" class="dia"></span>-<span id="mes" class="mes"></span>-<span id="anio" class="anio"></span>
+                </div>
+                <div class="hora">
+                    <span id="horas" class="horas"></span> :
+                    <span id="minutos" class="minutos"></span> :
+                    <span id="segundos" class="segundos"></span>
+                </div>
             </div>
-        </div>
-    </nav>
-
         `);
     };
 
@@ -117,10 +131,10 @@ $(function () {
     function menulineas() {
         if (pageName == 'esta') {
             path = '../';
-        }else{
+        } else {
             path = '';
         }
-        
+
         $('#menulineas').append(` 
         <div class="container mt-5">
             <div class="row mt-5 text-center">
@@ -275,4 +289,66 @@ $(function () {
         `);
     };
 
+    /*-------------------------------------------------------------------
+        X. Reloj de la pagina
+    --------------------------------------------------------------------*/
+    function reloj() {
+        var fecha = new Date(); //Actualizar fecha.
+        var horas = fecha.getHours(); //hora actual
+        var minutos = fecha.getMinutes(); //minuto actual
+        var segundos = fecha.getSeconds(); //segundo actual
+        var diaSemana = fecha.getDay(); //nombre del dia de la semana actual
+        var dia = fecha.getDay(); //numero de dia actual
+        var mes = fecha.getMonth(); //mes actual
+        var anio = fecha.getFullYear(); //año actual
+
+        const diasSemana = [
+            'Dom',
+            'Lun',
+            'Mar',
+            'Mié',
+            'Jue',
+            'Vie',
+            'Sáb'
+        ];
+
+        document.getElementById('diaSemana').textContent = diasSemana[diaSemana];
+        document.getElementById('dia').textContent = dia;
+
+        const meses = [
+            'ene',
+            'feb',
+            'mar',
+            'abr',
+            'may',
+            'jun',
+            'jul',
+            'ago',
+            'sep',
+            'oct',
+            'nov',
+            'dic'
+        ];
+     
+        document.getElementById('mes').textContent = meses[mes];
+        document.getElementById('anio').textContent = anio;
+
+        document.getElementById('horas').textContent = horas;
+
+        if (horas < 10) { //dos cifras para la hora
+            horas = "0" + horas;
+        }
+        if (minutos < 10) { //dos cifras para el minuto
+            minutos = "0" + minutos;
+        }
+        if (segundos < 10) { //dos cifras para el segundo
+            segundos = "0" + segundos;
+        }
+        //devolver los datos:
+        document.getElementById('minutos').textContent = minutos;
+        document.getElementById('segundos').textContent = segundos; 
+    };
+   
+    setInterval(reloj, 1000); //iniciar temporizador
+        
 });
