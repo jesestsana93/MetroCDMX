@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--  CARGA DE FONT AWESOME -->
     <link rel="stylesheet" href="css/all.min.css">
+    <!-- CARGA DEL CSS DE "VENOBOX" -->
+    <link rel="stylesheet" href="css/venobox.css">
+    <!--  CARGA DE GALERIA DE IMÁGENES CON EL SLIDER SLICK.CSS -->
+    <link rel="stylesheet" href="css/slick.css">
     <!-- CARGA DE FUENTES DE GOOGLE -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i">
     <!-- CARGA DE ESTILOS CSS PERSONALIZADOS -->
@@ -34,16 +38,96 @@
     <section id="inicio">
         <header class="fixed-top mb-5" id="encabezado">
         </header>
-        
+
     </section>
 
-    <section>
+    <section class="slider">
         <div class="container mt-5">
             <div class="row mt-5">
                 <div class="col-12 mt-5 mt-xl-0">
-                    <img src="images/banner.jpg" alt="banner" class="img-fluid mt-sm-2 mt-md-0">
+                    <div id="banner">
+                        <div>
+                            <img src="images/banner/mantenimiento.jpg" alt="mantenimiento" class="img-fluid">
+                        </div>
+                        <div>
+                            <img src="images/banner/sabiasque1.png" alt="banner 1" class="img-fluid">
+                        </div>
+                        <div>
+                            <img src="images/banner/sabiasque2.png" alt="banner 2" class="img-fluid">
+                        </div>
+                    </div>
+                    <!--banner-->
                 </div>
+                <!--col-->
+            </div>
+            <!--row-->
+        </div>
+        <!--container-->
+    </section>
 
+    <main>
+        <div class="container">
+            <div class="row no-gutters linea7">
+                <div class="col-lg-6">
+                    <div class="contenedor-video position-relative text-truncate">
+                        <img src="images/banner/47aniversario.jpg" alt="47aniversario" class="img-fluid">
+                        <a href="https://www.youtube.com/watch?v=SBp152Ty4ws" class="venobox-video" data-vbtype="video"
+                            title="metro 47 años"><i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-4 centrado">
+                    <p>El STC es un Organismo Público Descentralizado, cuyo objeto es la operación y explotación de un
+                        tren rápido, movido por energía eléctrica, con recorrido subterráneo, de superficie y elevado
+                        para dar movilidad principalmente a usuarios de la Ciudad de México y la zona Metropolitana del
+                        Valle de México.</p>
+                </div>
+            </div><!-- /.row-->
+        </div>
+    </main>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="subtitulo">Viaje rápido y seguro</h3>
+                    <p class="h6">EN ACCESOS, SALIDAS Y PASILLOS</p>
+                    <ul>
+                        <li>No obstruyas el paso y respeta la señalización</li>
+                        <li>Para evitar accidentes, no arrojes basura o líquidos al piso</li>
+                        <li>Camina por la derecha y cede el paso a la izquierda</li>
+                    </ul>
+                    <p class="h6">ZONA DE ESCALERAS</p>
+                    <ul>
+                        <li>Sujeta a los menores de la mano y no los sientes en los escalones</li>
+                        <li>En escaleras eléctricas: no intentes usarlas en contrasentido y no sueltes de la mano a los niños</li>
+                        <li>No arrojes objetos, basura o líquidos en las escaleras</li>
+                        <li>No utilices los pasamanos como resbaladillas</li>
+                    </ul>
+                    <p class="h6">ANDENES</p>
+                    <ul>
+                        <li>No rebases la línea amarilla</li>
+                        <li>No intentes por ningún motivo, bajar a zona de vías</li>
+                        <li>Espera el tren en el punto más libre del andén</li>
+                        <li>Al llegar el tren, ubícate a los costados de las puertas</li>
+                        <li>Antes de entrar al vagón, permite salir</li>
+                        <li>No te sientes en el piso</li>
+                        <li>Respeta los vagones asignados para mujeres y niños</li>
+                        <li>No intentes abordar el tren al sonido de cierre de puertas</li>
+                        <li>No permitas que los niños jueguen con pelota, carros u otros objetos, ya que podrían caer a vías</li>
+                    </ul>
+                    <p class="h6">TRENES</p>
+                    <ul>
+                        <li>No te quedes en la puerta, distribúyete a lo largo del vagón</li>
+                        <li>Cede el asiento reservado</li>
+                        <li>En zona de puertas, no obstruyas el descenso de usuarios</li>
+                        <li>No pintes, rayes o maltrates los trenes</li>
+                        <li>No dejes basura en los vagones</li>
+                        <li>No obstruyas el libre cierre de puertas</li>
+                        <li>No te sientes en el piso</li>
+                        <li>Sujétate de los pasamanos</li>
+                        <li>Utiliza la palanca roja sólo en caso de emergencia y/o auxilio</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -57,6 +141,10 @@
     <script src="js/popper.min.js"></script>
     <!-- CARGA DE BOOTSTRAP JS -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Carga de "VenoBox" para la parte animada del vídeo -->
+    <script src="js/venobox.min.js"></script>
+    <!-- CARGA DE SLICK PARA EL BANNER DEL INDEX-->
+    <script src="js/slick.min.js"></script>
     <!-- Carga de mis-scripts.js | Inicia las funiones de los scripts -->
     <script src="js/scripts.js"></script>
 </body>

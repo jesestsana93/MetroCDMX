@@ -178,9 +178,18 @@ body {
   color: white;
   font-size: 1.5rem;
   text-align: center;
+  text-transform: uppercase;
 }
 #inicio .navbar-brand {
   margin-right: 0;
+}
+#inicio .navbar-nav .nav-item .dropdown-menu {
+  margin-left: 0;
+}
+#inicio .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  text-align: center;
+  font-size: 1.3rem;
+  border-bottom: 1px solid white;
 }
 #inicio .boton-menu:before {
   content: "\f0c9";
@@ -226,6 +235,98 @@ body {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   z-index: -5;
+}
+
+/*video*/
+.centrado {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*Estilos aplicados a venobox para la parte de la imagen-video*/
+.contenedor-video a {
+  background-color: rgba(255, 255, 255, 0.79);
+  width: 7rem;
+  height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  color: #f79239;
+  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-clip: padding-box;
+  border: 0 solid transparent;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.contenedor-video a:hover {
+  background-color: #f79239;
+  color: white;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+}
+
+.contenedor-video img {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.contenedor-video:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/*------------------------------
+Y. SLIDER
+--------------------------------*/
+.slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f79239;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.slider .slick-dots:active {
+  color: green;
+}
+.slider .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: 0;
+  outline: none;
+  background: transparent;
 }
 
 /*------------------------------
@@ -571,9 +672,6 @@ X. Show de las Medias Queries
     font-size: 16px;
   }
 
-  #inicio .navbar-nav .nav-item .dropdown-menu {
-    margin-left: -7rem;
-  }
   #inicio .navbar-dark .navbar-nav .nav-link {
     font-size: 1rem;
   }
@@ -609,6 +707,15 @@ X. Show de las Medias Queries
 @media (min-width: 992px) {
   #inicio .logoMetro {
     margin-left: 3.3rem;
+  }
+  #inicio .navbar-nav .nav-item .dropdown-menu {
+    margin-left: -7rem;
+  }
+  #inicio .navbar-dark .navbar-nav .nav-link {
+    text-transform: none;
+  }
+  #inicio .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    font-size: 1rem;
   }
   #inicio #reloj {
     top: 4rem;

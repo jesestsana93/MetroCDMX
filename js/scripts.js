@@ -1,20 +1,4 @@
 $(function () {
-    /*-------------------------------------------------------------------
-        1. FUNCIONES PARA EL MENU EN DISPOSITIVOS MOVILES
-    --------------------------------------------------------------------*/
-    /*  Inserta y quita la clase ".icono-cerrar" al boton del menú*/
-    $('#menu-navegacion .navbar-toggler').click(function () {
-        $('.boton-menu').toggleClass('icono-cerrar');
-    });
-
-    /*Al hacer click en un enlace del menú principal */
-    $('#menu-navegacion .navbar-nav a').click(function () {
-        /* 1) Quita la clase ".icono-cerrar" */
-        $('.boton-menu').removeClass('icono-cerrar');
-
-        /*2) Contraemos el menu */
-        $('#menu-navegacion .navbar-collapse').collapse('hide');
-    });
 
     var pageName = window.location.pathname.split('/')[window.location.pathname.split('/').length - 1].substring(0, 4)
     var pathImg = '';
@@ -25,7 +9,7 @@ $(function () {
     reloj();
 
     /*-------------------------------------------------------------------
-        X. HEADER DEL SITIO
+        1. HEADER DEL SITIO
     --------------------------------------------------------------------*/
     function header() {
         console.log(pageName)
@@ -126,7 +110,7 @@ $(function () {
     };
 
     /*-------------------------------------------------------------------
-        X. SUBMENU ENTRE LAS LINEAS DEL METRO
+        2. SUBMENU ENTRE LAS LINEAS DEL METRO
     --------------------------------------------------------------------*/
     function menulineas() {
         if (pageName == 'esta') {
@@ -215,7 +199,7 @@ $(function () {
         `);
     };
     /*-------------------------------------------------------------------
-        X. FOOTER DEL SITIO
+        3. FOOTER DEL SITIO
     --------------------------------------------------------------------*/
     function footer() {
         $('footer').append(`  
@@ -290,7 +274,23 @@ $(function () {
     };
 
     /*-------------------------------------------------------------------
-        X. Reloj de la pagina
+        4. FUNCIONES PARA EL MENU EN DISPOSITIVOS MOVILES
+    --------------------------------------------------------------------*/
+    /*  Inserta y quita la clase ".icono-cerrar" al boton del menú*/
+    $('#menu-navegacion .navbar-toggler').click(function () {
+        $('.boton-menu').toggleClass('icono-cerrar');
+    });
+
+    /*Al hacer click en un enlace del menú principal */
+    $('#menu-navegacion .navbar-nav a').click(function () {
+        /* Quita la clase ".icono-cerrar" */
+        $('.boton-menu').removeClass('icono-cerrar');
+
+        
+    });
+
+    /*-------------------------------------------------------------------
+        5. Reloj de la pagina
     --------------------------------------------------------------------*/
     function reloj() {
         var fecha = new Date(); //Actualizar fecha.
@@ -347,8 +347,33 @@ $(function () {
         //devolver los datos:
         document.getElementById('minutos').textContent = minutos;
         document.getElementById('segundos').textContent = segundos; 
-    };
-   
+    };   
     setInterval(reloj, 1000); //iniciar temporizador
-        
+
+    /*-----------------------------------------------------------
+    6. CONFIGURACION DE SLICK PARA LA PARTE DEL BANNER
+    ------------------------------------------------------------*/
+    $('#banner').slick({
+        dots: true,
+        infinite: true,
+        speed: 2000,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000        
+    });
+    
+    /*-----------------------------------------------------------
+       7. INICIANDO VENOBOX PARA EL VIDEO DEL INDEX
+    -------------------------------------------------------------*/
+    $('.venobox-video').venobox({
+        autoplay: true,
+        bgcolor: 'rgba(17, 187, 0, 0.4)',
+        border: '5px',
+        closeColor: '#fff',
+        overlayColor: 'rgba(247, 146, 57, 0.83)',
+        spinner: 'three-bounce'
+    });
+
 });

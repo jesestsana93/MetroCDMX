@@ -198,9 +198,20 @@ body {
         color: $claro;
         font-size: 1.5rem;
         text-align: center;
+        text-transform: uppercase;
     }
     .navbar-brand{
         margin-right: 0;
+    }
+
+    .navbar-nav .nav-item .dropdown-menu{
+        margin-left: 0;
+    }
+
+    .navbar-nav .nav-item .dropdown-menu .dropdown-item{
+        text-align: center;
+        font-size: 1.3rem;
+        border-bottom: 1px solid $claro;
     }
 
     /*Boton del menu */
@@ -242,7 +253,8 @@ body {
                 }
             }
         }
-    }
+    }   
+
     /*ESTILOS AL RELOJ*/
     #reloj{
         position: fixed;
@@ -259,9 +271,81 @@ body {
         border-bottom-right-radius: 1rem;
         z-index: -5;
     }
-
 }
 
+/*video*/
+.centrado{
+    color: $claro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Estilos aplicados a venobox para la parte de la imagen-video*/
+.contenedor-video a {
+    background-color: rgba(255, 255, 255, 0.79);
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    border-radius: 50%;
+    color: $principal;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-clip: padding-box;
+    border: 0 solid transparent;
+    transition: all .5s ease;
+}
+
+.contenedor-video a:hover {
+    background-color: $principal;
+    color: $claro;
+    border: 10px solid rgba(255, 255, 255, 0.50);
+}
+
+.contenedor-video img {
+    transition: all .5s ease;
+}
+
+.contenedor-video:hover img {
+    transform: scale(1.2);
+}
+
+/*------------------------------
+Y. SLIDER
+--------------------------------*/
+.slider{
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        color: $principal;
+        font-size: 1.5rem;
+        cursor: pointer;
+        &:active{
+            color: green;
+        }
+        li button{
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            
+            
+            border: 0;
+            outline: none;
+            background: transparent;
+            
+
+        }
+    }
+}
 /*------------------------------
 Y. FOOTER
 --------------------------------*/
@@ -629,13 +713,9 @@ X. Show de las Medias Queries
         font-size: 16px;
     }
 
-    #inicio {
-        .navbar-nav .nav-item .dropdown-menu {
-            margin-left: -7rem;
-        }
-
+    #inicio {       
         .navbar-dark .navbar-nav .nav-link {
-            font-size: 1rem;
+            font-size: 1rem;            
         }
         .logoCDMX  {
             width: 11rem;            
@@ -681,6 +761,17 @@ X. Show de las Medias Queries
     #inicio {
         .logoMetro  {
             margin-left: 3.3rem;
+        }
+        .navbar-nav .nav-item .dropdown-menu {
+            margin-left: -7rem;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            text-transform: none;            
+        }
+
+        .navbar-nav .nav-item .dropdown-menu .dropdown-item{
+            font-size: 1rem;
         }
 
         #reloj{
