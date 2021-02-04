@@ -58,7 +58,7 @@ $(function () {
                     <div class="collapse navbar-collapse" id="menu-principal">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item"><a href="` + path + `index.html" class="nav-link">Inicio</a></li>
-                            <li class="nav-item"><a href="" class="nav-link">Nosotros</a></li>
+                            <li class="nav-item"><a href="` + path + `nosotros.html" class="nav-link">Nosotros</a></li>
                             <li class="nav-item dropdown">
                                 <a href="" class="nav-link dropdown-toggle" id="redMetro" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">La red
