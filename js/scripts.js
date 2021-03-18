@@ -98,7 +98,9 @@ $(function () {
             <div id="reloj">
                 <div class="fecha mr-3">
                     <span id="diaSemana" class="diaSemana"></span>, 
-                    <span id="dia" class="dia"></span>-<span id="mes" class="mes"></span>-<span id="anio" class="anio"></span>
+                    <span id="dia" class="dia"></span>-
+                    <span id="mes" class="mes"></span>-
+                    <span id="anio" class="anio"></span>
                 </div>
                 <div class="hora">
                     <span id="horas" class="horas"></span> :
